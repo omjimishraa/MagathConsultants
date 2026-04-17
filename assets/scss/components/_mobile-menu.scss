@@ -4,6 +4,13 @@
 .mobile-header.mobile-haeder1{
     background:var(--ztc-text-text-1) ;
     position: fixed;
+     .mobile-logo {
+    img {
+      width: 115px;
+    //  height: 40px;
+     object-fit: cover;
+    }
+  }
 }
 .mobile-sidebar.mobile-sidebar1{
     background: var(--ztc-text-text-1);

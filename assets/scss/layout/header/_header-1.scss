@@ -36,6 +36,13 @@
             justify-content: space-between;
             position: relative;
             transition: all .4s;
+            .site-logo {
+                img {
+                    width: 140px;
+                    height: 47.676px;
+                    object-fit: cover;
+                }
+            }
             .all-images-menu {
                 display: flex;
                 align-items: center;
