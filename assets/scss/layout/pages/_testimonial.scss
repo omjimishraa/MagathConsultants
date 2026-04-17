@@ -24,9 +24,18 @@
     }
     .slider-images-area {
         .img1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
+            max-width: 150px;
+            &:hover {
+                opacity: 0.8;
+                transition: all 0.3s ease;
+            }
             img {
-                height: 38px;
-                width: 120px;
+                max-height: 80px;
+                max-width: 150px;
                 object-fit: contain;
             }
         }
@@ -1754,6 +1763,20 @@
                     margin: 0 6px 0 0;
                 }
             }
+        }
+    }
+}
+
+/* Index Page Testimonial Override */
+.homepage1-body .testimonial8-section-area .testimonial4-slider-area {
+    .owl-nav {
+        .owl-next {
+            position: relative;
+            right: auto;
+        }
+        .owl-prev {
+            position: relative;
+            left: auto;
         }
     }
 }
