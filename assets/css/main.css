@@ -19547,33 +19547,29 @@ Location:
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu {
   visibility: hidden;
   opacity: 0;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 28px 70px;
   position: absolute;
   background: var(--ztc-text-text-1);
-  top: 100px;
-  z-index: 1;
-  transition: all 0.4s;
-  border-radius: 5px;
-  padding: 20px;
-  left: -255px;
-  width: 1000px;
-  max-height: 500px;
+  top: 100%;
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+  border-radius: 18px;
+  padding: 26px 20px;
+  left: -420px;
+  width: 1320px;
+  max-width: calc(100vw - 40px);
+  min-width: 1100px;
   overflow: hidden;
   overflow-y: auto;
   display: block;
-  top: 201.3%;
   transform: scale(1, 0);
   transform-origin: top;
 }
 
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover .services-mega-menu {
   visibility: visible;
-  transition: all 0.5s ease-in-out;
   opacity: 1;
-  z-index: 9;
-  top: 50px;
-  position: absolute;
-  transition: all 0.4s;
+  top: calc(100% + 8px);
   transform: scale(1, 1);
 }
 
@@ -19584,36 +19580,41 @@ Location:
 
 .mega-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 28px;
 }
 
-/* Mega Menu Items */
-.mega-menu-item {
+.mega-column {
   display: flex;
   flex-direction: column;
 }
 
-.mega-menu-item h5 {
-  font-size: 12px;
-  font-weight: 600;
+.mega-column h5,
+.mega-column h6 {
+  margin: 0 0 16px 0;
   color: var(--ztc-text-text-4);
-  margin: 0 0 8px 0;
   font-family: var(--ztc-family-font1);
-  padding-bottom: 8px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.2;
 }
 
-/* Mega Menu List */
+.mega-column h5 {
+  font-size: 14px;
+}
+
+.mega-column h6 {
+  margin-top: 24px;
+  font-size: 14px;
+}
+
 .mega-menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
 }
 
 .mega-menu-list li {
@@ -19621,20 +19622,66 @@ Location:
 }
 
 .mega-menu-list li a {
-  font-size: 12px;
-  color: var(--ztc-text-text-2);
+  font-size: 14px !important;
+  color: #000;
   font-family: var(--ztc-family-font1);
-  transition: all 0.3s ease;
-  padding: 4px 0;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
   display: block;
-  line-height: 1.4;
+  padding: 4px 0 !important;
+  white-space: nowrap;
 }
 
 .mega-menu-list li a:hover {
   color: var(--ztc-text-text-4);
-  padding-left: 5px;
+  transform: translateX(4px);
 }
 
+.mega-column + .mega-column {
+  border-left: 1px solid rgba(14, 20, 45, 0.05);
+  padding-left: 28px;
+}
+
+@media (max-width: 1360px) {
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu {
+    left: -390px;
+    min-width: 960px;
+    width: calc(100vw - 40px);
+  }
+}
+@media (max-width: 1200px) {
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu {
+    left: -500px;
+    width: calc(100vw - 40px);
+    min-width: 860px;
+  }
+  .mega-columns {
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 1024px) {
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu {
+    left: -16px;
+    width: calc(100vw - 32px);
+    min-width: unset;
+  }
+  .mega-columns {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  .mega-column + .mega-column {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu {
+    padding: 16px 14px;
+  }
+  .mega-columns {
+    grid-template-columns: 1fr;
+  }
+}
 /*============= FEATURES CSS AREA STARTS ===============*/
 .features15-section-area {
   background: #F9FAFB;
@@ -20919,6 +20966,8 @@ Location:
   overflow: hidden;
   border-radius: 4px;
   transition: all 0.4s;
+  height: 280px;
+  width: 100%;
 }
 .work13-section-area .project13-boxrea .img1 img {
   height: 100%;
@@ -20926,9 +20975,14 @@ Location:
   object-fit: cover;
   transition: all 0.4s;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .work13-section-area .project13-boxrea .img1 {
+    height: 260px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .work13-section-area .project13-boxrea .img1 img {
-    height: 400px;
+  .work13-section-area .project13-boxrea .img1 {
+    height: 220px;
   }
 }
 .work13-section-area .project13-boxrea .content-area {
@@ -20980,6 +21034,14 @@ Location:
   line-height: 28px;
   display: inline-block;
   transition: all 0.4s;
+}
+.work13-section-area .project13-boxrea .content-area p {
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s14);
+  line-height: var(--ztc-font-size-font-s22);
+  font-weight: var(--ztc-weight-regular);
+  color: var(--ztc-text-text-3);
+  margin-top: 8px;
 }
 
 .projects15-section-area {
@@ -27414,6 +27476,11 @@ Location:
 
 /*============= CTA CSS AREA ENDS===============*/
 /*============= TESTIMONIAL CSS AREA ===============*/
+.testimonialimg {
+  max-width: 125px !important;
+  max-height: 55px !important;
+}
+
 .slider-section-area {
   position: relative;
   z-index: 1;
@@ -28142,6 +28209,11 @@ Location:
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 18px;
+}
+.testimonial4-section-area .testimonial4-slider-area .testimonial-boxarea .auhtor-logo .text {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 .testimonial4-section-area .testimonial4-slider-area .testimonial-boxarea .auhtor-logo .text a {
   display: inline-block;
@@ -28156,6 +28228,29 @@ Location:
 .testimonial4-section-area .testimonial4-slider-area .testimonial-boxarea .auhtor-logo .text ul li {
   display: inline-block;
   color: #FFBA00;
+}
+.testimonial4-section-area .testimonial4-slider-area .testimonial-boxarea .auhtor-logo .logo {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.testimonial4-section-area .testimonial4-slider-area .testimonial-boxarea .auhtor-logo .logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 90px;
+  max-height: 48px;
+  object-fit: contain;
+}
+.testimonial4-section-area .testimonial4-slider-area .testimonial-boxarea .homepage-auhtor-logo .text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.testimonial4-section-area .testimonial4-slider-area .testimonial-boxarea .homepage-auhtor-logo .logo {
+  margin-left: auto;
+}
+.testimonial4-section-area .testimonial4-slider-area .testimonial-boxarea .homepage-auhtor-logo .logo img {
+  max-width: 70px;
+  max-height: 40px;
 }
 @media (max-width: 767px) {
   .testimonial4-section-area .testimonial4-slider-area .owl-nav {
