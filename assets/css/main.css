@@ -8408,6 +8408,9 @@ Location:
   background: var(--ztc-text-text-1);
   overflow-y: scroll;
 }
+.mobile-sidebar.mobile-sidebar1 .logos img {
+  width: 30%;
+}
 .mobile-sidebar.mobile-sidebar1 .mobile-nav.mobile-nav1 .mobile-nav-list.nav-list1 li a {
   font-weight: var(--ztc-weight-medium);
 }
@@ -19644,7 +19647,7 @@ Location:
 
 @media (max-width: 1360px) {
   .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu {
-    left: -390px;
+    left: -335px;
     min-width: 960px;
     width: calc(100vw - 40px);
   }

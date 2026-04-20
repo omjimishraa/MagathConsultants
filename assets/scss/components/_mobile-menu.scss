@@ -15,6 +15,11 @@
 .mobile-sidebar.mobile-sidebar1{
     background: var(--ztc-text-text-1);
     overflow-y: scroll;
+
+    .logos img{
+      width: 30%;
+    }
+
     .mobile-nav.mobile-nav1{
       .mobile-nav-list.nav-list1{
         li{
