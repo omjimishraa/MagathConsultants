@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Blockchain And Secure Identity illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#4b5563"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dbeafe" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Blockchain And Secure</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Identity</text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#dbeafe">Service-specific visual concept</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#cbd5e1" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Identity</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#cbd5e1" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Ledger</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#cbd5e1" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Security</text>
+
+  <rect x="650" y="130" width="380" height="300" rx="16" fill="#121826" stroke="#cbd5e1" stroke-opacity="0.5"/>
+<rect x="700" y="220" width="76" height="76" rx="10" fill="#64748b" fill-opacity="0.8"/>
+<rect x="805" y="220" width="76" height="76" rx="10" fill="#94a3b8" fill-opacity="0.75"/>
+<rect x="910" y="220" width="76" height="76" rx="10" fill="#475569" fill-opacity="0.82"/>
+<line x1="776" y1="258" x2="805" y2="258" stroke="#e2e8f0" stroke-width="4"/>
+<line x1="881" y1="258" x2="910" y2="258" stroke="#e2e8f0" stroke-width="4"/>
+<path d="M820 335 C820 310 840 296 865 296 C890 296 910 310 910 335 L910 360 L820 360 Z" fill="#334155"/>
+<rect x="848" y="330" width="34" height="30" rx="6" fill="#e2e8f0" fill-opacity="0.8"/>
+</svg>

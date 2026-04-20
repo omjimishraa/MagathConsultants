@@ -1,0 +1,35 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="ERP Development Case Study illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b4332"/>
+      <stop offset="100%" stop-color="#2d6a4f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dbeafe" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">ERP Development Case</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Study</text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#dbeafe">Implementation scenario and architecture</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#95d5b2" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">ERP</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#95d5b2" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Operations</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#95d5b2" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Finance</text>
+
+  <rect x="650" y="130" width="380" height="300" rx="16" fill="#163126" stroke="#95d5b2" stroke-opacity="0.55"/>
+<rect x="685" y="170" width="98" height="80" rx="10" fill="#2d6a4f" fill-opacity="0.78"/>
+<rect x="795" y="170" width="98" height="80" rx="10" fill="#40916c" fill-opacity="0.78"/>
+<rect x="905" y="170" width="90" height="80" rx="10" fill="#52b788" fill-opacity="0.78"/>
+<rect x="685" y="270" width="310" height="120" rx="12" fill="#fff" fill-opacity="0.12"/>
+<line x1="710" y1="310" x2="970" y2="310" stroke="#d8f3dc" stroke-width="3"/>
+<line x1="710" y1="338" x2="940" y2="338" stroke="#d8f3dc" stroke-width="3"/>
+</svg>

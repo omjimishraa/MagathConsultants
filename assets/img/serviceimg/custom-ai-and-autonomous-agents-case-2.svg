@@ -1,0 +1,35 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Custom AI &amp; Autonomous Agents Impact illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dbeafe" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Custom AI &amp;amp;</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Autonomous Agents Impact</text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#dbeafe">Business and delivery outcomes</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#a5b4fc" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">AI Agents</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#a5b4fc" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Automation</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#a5b4fc" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Decisioning</text>
+
+  <rect x="650" y="130" width="380" height="300" rx="16" fill="#121b39" stroke="#a5b4fc" stroke-opacity="0.55"/>
+<circle cx="760" cy="220" r="44" fill="#4f46e5" fill-opacity="0.7"/>
+<circle cx="920" cy="220" r="44" fill="#6366f1" fill-opacity="0.7"/>
+<circle cx="840" cy="330" r="52" fill="#818cf8" fill-opacity="0.7"/>
+<line x1="800" y1="244" x2="840" y2="294" stroke="#c7d2fe" stroke-width="3"/>
+<line x1="880" y1="244" x2="840" y2="294" stroke="#c7d2fe" stroke-width="3"/>
+<rect x="700" y="380" width="280" height="16" rx="8" fill="#fff" fill-opacity="0.6"/>
+</svg>
