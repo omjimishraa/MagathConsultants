@@ -60,7 +60,8 @@ if (
     $message === '' ||
     !filter_var($email, FILTER_VALIDATE_EMAIL)
 ) {
-    header('Location: contact.html?status=error');
+    header('Content-Type: application/json');
+    echo json_encode(['ok' => false, 'msg' => 'Invalid or missing fields.']);
     exit;
 }
 
@@ -73,7 +74,8 @@ $smtpPass = getenv('SMTP_PASS') ?: '';
 $to = getenv('CONTACT_TO_EMAIL') ?: 'info@magathconsultants.com';
 
 if ($smtpPass === '') {
-    header('Location: contact.html?status=error');
+    header('Content-Type: application/json');
+    echo json_encode(['ok' => false, 'msg' => 'Server mail configuration error.']);
     exit;
 }
 
@@ -161,10 +163,10 @@ if ($socket) {
     fclose($socket);
 }
 
+header('Content-Type: application/json');
 if ($isSent) {
-    header('Location: contact.html?status=success');
-    exit;
+    echo json_encode(['ok' => true]);
+} else {
+    echo json_encode(['ok' => false, 'msg' => 'Failed to send email. Please try again.']);
 }
-
-header('Location: contact.html?status=error');
 exit;
