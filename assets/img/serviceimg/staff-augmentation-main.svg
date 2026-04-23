@@ -1,0 +1,55 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="70" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1F4D"/>
+      <stop offset="1" stop-color="#1849A9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="230" y1="210" x2="940" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F39C12"/>
+      <stop offset="1" stop-color="#FFD166"/>
+    </linearGradient>
+    <filter id="shadow" x="145" y="125" width="910" height="650" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#091430" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect x="80" y="70" width="1040" height="760" rx="40" fill="url(#bg)"/>
+
+  <g opacity="0.2">
+    <circle cx="235" cy="205" r="98" fill="#5C82D8"/>
+    <circle cx="962" cy="725" r="128" fill="#5C82D8"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="190" y="170" width="820" height="560" rx="32" fill="#0F2A61"/>
+  </g>
+
+  <rect x="250" y="240" width="700" height="90" rx="20" fill="#123576"/>
+  <rect x="280" y="270" width="180" height="30" rx="15" fill="#2A57A5"/>
+  <rect x="490" y="270" width="210" height="30" rx="15" fill="#2A57A5"/>
+  <rect x="730" y="270" width="190" height="30" rx="15" fill="#2A57A5"/>
+
+  <g>
+    <circle cx="340" cy="470" r="78" fill="#123576"/>
+    <circle cx="600" cy="470" r="110" fill="url(#accent)"/>
+    <circle cx="860" cy="470" r="78" fill="#123576"/>
+
+    <circle cx="340" cy="450" r="24" fill="#CFE1FF"/>
+    <rect x="304" y="485" width="72" height="40" rx="20" fill="#CFE1FF"/>
+
+    <circle cx="600" cy="430" r="34" fill="#1A3A7A"/>
+    <rect x="548" y="480" width="104" height="54" rx="27" fill="#1A3A7A"/>
+
+    <circle cx="860" cy="450" r="24" fill="#CFE1FF"/>
+    <rect x="824" y="485" width="72" height="40" rx="20" fill="#CFE1FF"/>
+  </g>
+
+  <path d="M418 470H490" stroke="#F3C56A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M710 470H782" stroke="#F3C56A" stroke-width="10" stroke-linecap="round"/>
+
+  <g>
+    <rect x="280" y="620" width="180" height="24" rx="12" fill="#2A57A5"/>
+    <rect x="510" y="620" width="180" height="24" rx="12" fill="#2A57A5"/>
+    <rect x="740" y="620" width="180" height="24" rx="12" fill="#2A57A5"/>
+  </g>
+</svg>
