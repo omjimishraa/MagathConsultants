@@ -651,7 +651,8 @@
       <div class="row mt-5">
         <div class="col-lg-10 m-auto">
           <div class="career-form-wrap" data-aos="fade-up" data-aos-duration="1100">
-            <form action="#" method="post" enctype="multipart/form-data">
+            <div id="career-form-status" class="mb-4" style="display:none;"></div>
+            <form action="send-career.php" method="post" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <label class="form-label" for="fullName">Full Name</label>
@@ -802,6 +803,27 @@
   <script src="assets/js/plugins/slick-slider.js"></script>
   <script src="assets/js/plugins/circle-progress.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var statusBox = document.getElementById('career-form-status');
+      if (!statusBox) {
+        return;
+      }
+
+      var params = new URLSearchParams(window.location.search);
+      var status = params.get('status');
+
+      if (status === 'success') {
+        statusBox.style.display = 'block';
+        statusBox.className = 'alert alert-success mb-4';
+        statusBox.textContent = 'Thank you for applying. Our HR team will review your profile and connect with you soon.';
+      } else if (status === 'error') {
+        statusBox.style.display = 'block';
+        statusBox.className = 'alert alert-danger mb-4';
+        statusBox.textContent = 'Unable to submit your application right now. Please try again or email us directly at hr@magathconsultants.com.';
+      }
+    })();
+  </script>
 
 </body>
 
