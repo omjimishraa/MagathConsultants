@@ -81,14 +81,29 @@ ul, li{
     width: 100%;
     background:#F6F6EC;
     z-index: 99;
-    padding: 40px 30px;
+    /* padding: 40px 30px; */
     left: -100%;
     top: 0;
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
+    /* padding-top: 20px; */
     
     
+}
+
+.mobile-nav1{
+    padding: 25px 28px;
+    padding-top: 0px;
+}
+
+.mobile-sidebar .logosicon-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 25px;
+    background-color: #e3e1e1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .mobile-sidebar .contact-icon{
@@ -105,11 +120,11 @@ ul, li{
 }
 
 .menu-close {
-    position: absolute;
+    /* position: absolute;
     right: 20px;
-    top: 20px;
+    top: 20px; */
     font-size: 25px;
-    color: #161616;
+    color: #000;
     cursor: pointer;
 }
 
@@ -125,7 +140,7 @@ ul, li{
 
 
 ul.mobile-nav-list {
-    margin-top: 30px;
+    margin-top: 8px;
 }
 
 
