@@ -99,13 +99,16 @@
     trigger.setAttribute("aria-haspopup", "true");
     trigger.setAttribute("aria-controls", servicesItem.id);
     trigger.setAttribute("aria-expanded", "false");
+    servicesItem.setAttribute("aria-hidden", "true");
 
     var openAria = function () {
       trigger.setAttribute("aria-expanded", "true");
+      servicesItem.setAttribute("aria-hidden", "false");
     };
 
     var closeAria = function () {
       trigger.setAttribute("aria-expanded", "false");
+      servicesItem.setAttribute("aria-hidden", "true");
     };
 
     servicesItem.parentElement.addEventListener("mouseenter", openAria);

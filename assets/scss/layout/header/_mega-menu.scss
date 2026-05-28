@@ -24,10 +24,35 @@
 
 @media (min-width: 1025px) {
   .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu {
-    max-height: calc(100vh - 120px);
+    max-height: calc(100vh - var(--header-height, 120px));
     overflow-y: auto;
     overscroll-behavior: contain;
     scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 #e2e8f0;
+  }
+
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu:focus-within {
+    overflow-y: auto;
+  }
+
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu::-webkit-scrollbar-track {
+    background: #e2e8f0;
+    border-radius: 999px;
+  }
+
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 999px;
+    border: 2px solid #e2e8f0;
+  }
+
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
   }
 }
 
