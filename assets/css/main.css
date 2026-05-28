@@ -19560,11 +19560,20 @@ Location:
   width: 1320px;
   max-width: calc(100vw - 40px);
   min-width: 1100px;
-  overflow: hidden;
-  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: visible;
   display: block;
   transform: scale(1, 0);
   transform-origin: top;
+}
+
+@media (min-width: 1025px) {
+  .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .services-mega-menu {
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
 }
 
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover .services-mega-menu {
@@ -19665,6 +19674,8 @@ Location:
     left: -16px;
     width: calc(100vw - 32px);
     min-width: unset;
+    max-height: none;
+    overflow-y: visible;
   }
   .mega-columns {
     grid-template-columns: repeat(2, minmax(180px, 1fr));

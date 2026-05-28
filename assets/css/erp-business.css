@@ -1,0 +1,94 @@
+/* ERP custom styles: Business Central page */
+.erp-page {
+  overflow: hidden;
+}
+
+.erp-menu-link {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 8px;
+  white-space: normal !important;
+}
+
+.erp-menu-icon {
+  margin-top: 2px;
+  color: var(--ztc-text-text-4);
+  min-width: 16px;
+}
+
+.erp-menu-copy small {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.erp-is-active,
+.erp-is-parent-active {
+  color: var(--ztc-text-text-4) !important;
+  font-weight: 700 !important;
+}
+
+.erp-business-hero {
+  padding: 80px 0 70px;
+}
+
+.erp-business-hero img,
+.erp-business-media img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.erp-business-services {
+  padding-bottom: 70px;
+}
+
+.erp-business-card {
+  border: 1px solid #dbeafe;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+  height: 100%;
+}
+
+.erp-module-chart {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.erp-module-chart th,
+.erp-module-chart td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: left;
+}
+
+.erp-business-visuals {
+  padding-bottom: 70px;
+}
+
+.erp-business-media {
+  margin-bottom: 20px;
+}
+
+.erp-caption {
+  color: #475569;
+  font-size: 14px;
+}
+
+.erp-footer-cta {
+  padding: 70px 0;
+}
+
+.erp-form-invalid :invalid {
+  border-color: #dc2626 !important;
+}
+
+@media (max-width: 991px) {
+  .erp-business-hero {
+    padding-top: 60px;
+  }
+}
