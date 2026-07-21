@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="MVP Design Impact illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dbeafe" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">MVP Design Impact</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff"></text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#dbeafe">Business and delivery outcomes</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#bfdbfe" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">MVP</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#bfdbfe" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Rapid Build</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#bfdbfe" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Validation</text>
+
+  <rect x="650" y="130" width="380" height="300" rx="16" fill="#1f2937" stroke="#e2e8f0" stroke-opacity="0.5"/>
+<rect x="680" y="165" width="320" height="34" rx="8" fill="#fff" fill-opacity="0.16"/>
+<rect x="680" y="215" width="148" height="172" rx="10" fill="#fff" fill-opacity="0.12"/>
+<rect x="852" y="215" width="148" height="172" rx="10" fill="#fff" fill-opacity="0.12"/>
+<rect x="695" y="232" width="116" height="10" rx="5" fill="#fff" fill-opacity="0.62"/>
+<rect x="867" y="232" width="116" height="10" rx="5" fill="#fff" fill-opacity="0.62"/>
+<rect x="695" y="252" width="95" height="8" rx="4" fill="#fff" fill-opacity="0.45"/>
+<rect x="867" y="252" width="95" height="8" rx="4" fill="#fff" fill-opacity="0.45"/>
+</svg>

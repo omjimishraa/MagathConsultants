@@ -1,6 +1,11 @@
 @use '../../utils/' as * ;
 
 /*============= TESTIMONIAL CSS AREA ===============*/
+.testimonialimg {
+  max-width: 125px !important;
+  max-height: 55px !important;
+}
+
 .slider-section-area {
     position: relative;
     z-index: 1;
@@ -761,7 +766,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                gap: 18px;
                 .text {
+                    flex: 1 1 auto;
+                    min-width: 0;
                     a {
                         display: inline-block;
                         font-size: var(--ztc-font-size-font-s20);
@@ -777,6 +785,31 @@
                             display: inline-block;
                             color: #FFBA00;
                         }
+                    }
+                }
+                .logo {
+                    flex-shrink: 0;
+                    margin-left: auto;
+                    img {
+                        display: block;
+                        width: auto;
+                        height: auto;
+                        max-width: 90px;
+                        max-height: 48px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .homepage-auhtor-logo {
+                .text {
+                    flex: 1 1 auto;
+                    min-width: 0;
+                }
+                .logo {
+                    margin-left: auto;
+                    img {
+                        max-width: 70px;
+                        max-height: 40px;
                     }
                 }
             }

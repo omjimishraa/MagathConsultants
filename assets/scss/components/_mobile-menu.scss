@@ -6,7 +6,7 @@
     position: fixed;
      .mobile-logo {
     img {
-      width: 115px;
+      width: 99px;
     //  height: 40px;
      object-fit: cover;
     }
@@ -15,6 +15,11 @@
 .mobile-sidebar.mobile-sidebar1{
     background: var(--ztc-text-text-1);
     overflow-y: scroll;
+
+    .logos img{
+      width: 18%;
+    }
+
     .mobile-nav.mobile-nav1{
       .mobile-nav-list.nav-list1{
         li{

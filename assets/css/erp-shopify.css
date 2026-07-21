@@ -1,0 +1,93 @@
+/* ERP custom styles: Shopify page */
+.erp-page {
+  overflow: hidden;
+}
+
+.erp-menu-link {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 8px;
+  white-space: normal !important;
+}
+
+.erp-menu-icon {
+  margin-top: 2px;
+  color: var(--ztc-text-text-4);
+  min-width: 16px;
+}
+
+.erp-menu-copy small {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.erp-is-active,
+.erp-is-parent-active {
+  color: var(--ztc-text-text-4) !important;
+  font-weight: 700 !important;
+}
+
+.erp-shopify-hero {
+  padding: 80px 0 70px;
+}
+
+.erp-shopify-hero img,
+.erp-feature-media img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.erp-shopify-blocks {
+  padding-bottom: 70px;
+}
+
+.erp-shopify-block {
+  border: 1px solid #dcfce7;
+  background: #f0fdf4;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+  height: 100%;
+}
+
+.erp-features-grid {
+  padding: 0 0 70px;
+}
+
+.erp-feature-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.erp-case-teaser {
+  background: #052e16;
+  color: #e2e8f0;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.erp-case-teaser h3,
+.erp-case-teaser h4 {
+  color: #ffffff;
+}
+
+.erp-footer-cta {
+  padding: 70px 0;
+}
+
+.erp-form-invalid :invalid {
+  border-color: #dc2626 !important;
+}
+
+@media (max-width: 991px) {
+  .erp-shopify-hero {
+    padding-top: 60px;
+  }
+}

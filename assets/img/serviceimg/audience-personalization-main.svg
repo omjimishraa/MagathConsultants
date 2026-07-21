@@ -1,0 +1,41 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Audience Personalization illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b0a2a"/>
+      <stop offset="100%" stop-color="#9d174d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dbeafe" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Audience Personalization</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff"></text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#dbeafe">Service-specific visual concept</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#f9a8d4" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Audience Segments</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#f9a8d4" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Profiles</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#f9a8d4" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Journey Logic</text>
+
+  <rect x="645" y="120" width="390" height="330" rx="18" fill="#2a0e16" stroke="#fca5a5" stroke-opacity="0.5"/>
+<rect x="675" y="158" width="95" height="95" rx="12" fill="#ef4444" fill-opacity="0.75"/>
+<text x="708" y="213" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800" fill="#fff">Ae</text>
+<rect x="790" y="158" width="95" height="95" rx="12" fill="#f97316" fill-opacity="0.75"/>
+<text x="824" y="213" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800" fill="#fff">Ps</text>
+<rect x="905" y="158" width="95" height="95" rx="12" fill="#e11d48" fill-opacity="0.75"/>
+<text x="939" y="213" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="800" fill="#fff">Ai</text>
+<path d="M700 312 L785 312 L785 335 L870 335 L870 360 L955 360" fill="none" stroke="#fecaca" stroke-width="4"/>
+<circle cx="700" cy="312" r="8" fill="#fff"/>
+<circle cx="785" cy="335" r="8" fill="#fff"/>
+<circle cx="870" cy="360" r="8" fill="#fff"/>
+<circle cx="955" cy="360" r="8" fill="#fff"/>
+<text x="690" y="412" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#fecaca">Campaign Journey Automation</text>
+</svg>

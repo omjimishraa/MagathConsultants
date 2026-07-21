@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="iOS App Development illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dbeafe" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">iOS App Development</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff"></text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#dbeafe">Service-specific visual concept</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#93c5fd" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">iOS UI</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#93c5fd" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Swift</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#93c5fd" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">App Store</text>
+
+  <rect x="640" y="110" width="160" height="360" rx="28" fill="#0b1220" stroke="#cbd5e1" stroke-opacity="0.4"/>
+<rect x="658" y="145" width="124" height="300" rx="14" fill="#ffffff" fill-opacity="0.88"/>
+<rect x="675" y="170" width="90" height="14" rx="7" fill="#1d4ed8" fill-opacity="0.8"/>
+<rect x="675" y="198" width="90" height="62" rx="10" fill="#93c5fd" fill-opacity="0.6"/>
+<rect x="675" y="273" width="90" height="50" rx="10" fill="#c7d2fe" fill-opacity="0.8"/>
+<rect x="675" y="336" width="90" height="22" rx="11" fill="#16a34a" fill-opacity="0.75"/>
+<rect x="835" y="150" width="220" height="295" rx="16" fill="#ffffff" fill-opacity="0.14"/>
+<rect x="860" y="180" width="170" height="16" rx="8" fill="#ffffff" fill-opacity="0.7"/>
+<rect x="860" y="210" width="140" height="10" rx="5" fill="#ffffff" fill-opacity="0.45"/>
+<rect x="860" y="235" width="170" height="10" rx="5" fill="#ffffff" fill-opacity="0.45"/>
+<rect x="860" y="265" width="170" height="62" rx="10" fill="#60a5fa" fill-opacity="0.55"/>
+<rect x="860" y="340" width="120" height="16" rx="8" fill="#34d399" fill-opacity="0.6"/>
+</svg>

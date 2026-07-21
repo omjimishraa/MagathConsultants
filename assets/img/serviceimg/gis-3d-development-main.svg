@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="GIS 3D Development and Modeling illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ccfbf1" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">GIS - 3D Development</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">&amp; Modeling</text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#ccfbf1">Spatial intelligence, terrain models, and digital twins</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#5eead4" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">LiDAR</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#5eead4" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Terrain</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#5eead4" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">3D Scenes</text>
+
+  <rect x="640" y="130" width="390" height="320" rx="18" fill="#062b2b" stroke="#99f6e4" stroke-opacity="0.45"/>
+  <path d="M688 383 L760 255 L836 306 L904 215 L986 383 Z" fill="#34d399" fill-opacity="0.35" stroke="#a7f3d0" stroke-width="3"/>
+  <path d="M688 383 L734 330 L774 350 L826 286 L888 322 L940 270 L986 383 Z" fill="#2dd4bf" fill-opacity="0.32"/>
+  <path d="M720 190 L790 160 L852 194 L838 226 L760 238 Z" fill="#67e8f9" fill-opacity="0.22"/>
+  <circle cx="748" cy="250" r="9" fill="#ccfbf1"/>
+  <circle cx="826" cy="304" r="9" fill="#99f6e4"/>
+  <circle cx="905" cy="214" r="9" fill="#67e8f9"/>
+  <line x1="748" y1="250" x2="826" y2="304" stroke="#ccfbf1" stroke-width="3" stroke-opacity="0.7"/>
+  <line x1="826" y1="304" x2="905" y2="214" stroke="#ccfbf1" stroke-width="3" stroke-opacity="0.7"/>
+  <rect x="714" y="418" width="242" height="14" rx="7" fill="#ffffff" fill-opacity="0.18"/>
+  <rect x="714" y="446" width="178" height="10" rx="5" fill="#ffffff" fill-opacity="0.12"/>
+</svg>

@@ -832,3 +832,36 @@ updateProgress('.progress-inner.marketing', 94);
 //========== PARALLAX AREA ============= //
 
 })(jQuery);
+
+// Load ERP navigation enhancements globally so menu behavior stays consistent across pages.
+(function () {
+  if (window.__erpNavAssetsInjected) {
+    return;
+  }
+  window.__erpNavAssetsInjected = true;
+
+  function ensureStylesheet(href) {
+    var existing = document.querySelector('link[href="' + href + '"]');
+    if (existing) {
+      return;
+    }
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    document.head.appendChild(link);
+  }
+
+  function ensureScript(src) {
+    var existing = document.querySelector('script[src="' + src + '"]');
+    if (existing) {
+      return;
+    }
+    var script = document.createElement("script");
+    script.src = src;
+    script.defer = true;
+    document.body.appendChild(script);
+  }
+
+  ensureStylesheet("assets/css/erp-nav.css");
+  ensureScript("assets/js/erp-nav.js");
+})();

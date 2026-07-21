@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="CI/CD Pipelines Case Study illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dbeafe" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">CI/CD Pipelines Case</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Study</text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#dbeafe">Implementation scenario and architecture</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#99f6e4" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">CI/CD</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#99f6e4" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Automation</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#99f6e4" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Release Flow</text>
+
+  <rect x="650" y="130" width="380" height="300" rx="18" fill="#072a2f" stroke="#99f6e4" stroke-opacity="0.5"/>
+<rect x="690" y="180" width="88" height="50" rx="10" fill="#14b8a6" fill-opacity="0.7"/>
+<rect x="800" y="180" width="88" height="50" rx="10" fill="#0ea5e9" fill-opacity="0.7"/>
+<rect x="910" y="180" width="88" height="50" rx="10" fill="#22c55e" fill-opacity="0.7"/>
+<rect x="745" y="300" width="88" height="50" rx="10" fill="#f59e0b" fill-opacity="0.75"/>
+<rect x="855" y="300" width="88" height="50" rx="10" fill="#84cc16" fill-opacity="0.75"/>
+<path d="M778 205 L800 205 M888 205 L910 205 M844 325 L855 325 M734 205 L734 325 L745 325" stroke="#d1fae5" stroke-width="3"/>
+<text x="705" y="392" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#d1fae5">Build -> Test -> Release -> Monitor</text>
+</svg>

@@ -1804,7 +1804,7 @@
             left: 50%;
             transition: all .4s;
             border-radius: 5px;
-            background: var(--ddd, linear-gradient(91deg, #FF0A54 0.78%, #FF6F00 99.88%));           
+            background: var(--ddd, linear-gradient(91deg, #003673 0.78%, #003673 99.88%));           
             z-index: -1;
             top: 0;
             visibility: hidden;
@@ -1816,7 +1816,7 @@
             text-align: center;
             line-height: 70px;
             border-radius: 50%;
-            background: rgba(255, 15, 81, 0.05);
+            background: #eb921b26;
             display: inline-block;
             transition: all .4s;
         }

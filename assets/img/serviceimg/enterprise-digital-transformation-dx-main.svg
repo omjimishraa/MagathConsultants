@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Enterprise Digital Transformation (DX) illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="1080" cy="580" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="70" y="85" width="500" height="505" rx="26" fill="#ffffff" fill-opacity="0.07"/>
+
+  <text x="108" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#dbeafe" opacity="0.95">MAGATH CONSULTANTS</text>
+  <text x="108" y="236" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Enterprise Digital</text>
+  <text x="108" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Transformation (DX)</text>
+  <text x="108" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" fill="#dbeafe">Service-specific visual concept</text>
+
+  <rect x="108" y="398" width="145" height="36" rx="18" fill="#93c5fd" fill-opacity="0.35"/>
+  <text x="126" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">DX Program</text>
+
+  <rect x="268" y="398" width="145" height="36" rx="18" fill="#93c5fd" fill-opacity="0.25"/>
+  <text x="286" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Modernization</text>
+
+  <rect x="428" y="398" width="145" height="36" rx="18" fill="#93c5fd" fill-opacity="0.18"/>
+  <text x="446" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Enterprise</text>
+
+  <rect x="650" y="130" width="380" height="300" rx="16" fill="#11243e" stroke="#93c5fd" stroke-opacity="0.5"/>
+<rect x="685" y="170" width="130" height="100" rx="12" fill="#1e40af" fill-opacity="0.7"/>
+<rect x="865" y="170" width="130" height="100" rx="12" fill="#3b82f6" fill-opacity="0.7"/>
+<path d="M830 220 L850 220" stroke="#dbeafe" stroke-width="4"/>
+<path d="M842 210 L855 220 L842 230" stroke="#dbeafe" stroke-width="4" fill="none"/>
+<rect x="685" y="290" width="310" height="95" rx="12" fill="#fff" fill-opacity="0.13"/>
+<rect x="710" y="316" width="170" height="12" rx="6" fill="#fff" fill-opacity="0.75"/>
+<rect x="710" y="338" width="250" height="10" rx="5" fill="#fff" fill-opacity="0.5"/>
+</svg>

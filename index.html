@@ -19,18 +19,171 @@
   <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
   <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/erp-nav.css">
+   <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69e8e50912cc6f1c3c7233bb/1jmqs9apn';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  
 
   <!--=====  JS SCRIPT LINK =======-->
   <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
+  <style>
+    .blog1-scetion-area .blog-author-boxarea .img1 {
+      height: 240px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .blog1-scetion-area .blog-author-boxarea .img1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .blog1-scetion-area .blog-author-boxarea .img1:hover img {
+      transform: scale(1.04);
+    }
+
+    .product-image-trigger {
+      display: block;
+    }
+
+    .product-image-trigger:focus {
+      outline: 2px solid #f39c12;
+      outline-offset: 2px;
+    }
+
+    .product-image-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+
+    .product-image-modal.is-open {
+      display: flex;
+    }
+
+    .product-image-modal-dialog {
+      width: min(920px, 100%);
+      max-height: 90vh;
+      overflow-y: auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 18px;
+      position: relative;
+    }
+
+    .product-image-modal-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: 0;
+      background: #111111;
+      color: #ffffff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 18px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .product-image-modal img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      background: #f4f4f4;
+      border-radius: 8px;
+      margin-bottom: 14px;
+    }
+
+    .product-image-modal h4 {
+      margin-bottom: 8px;
+    }
+
+    .product-image-modal p {
+      margin: 0;
+      color: #333333;
+    }
+  </style>
+
+ 
+
+<!-- 360 Solutions Script -->
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nodes = document.querySelectorAll('.sol360-node');
+            const modal = document.getElementById('sol360-detailModal');
+            const closeBtn = document.querySelector('.sol360-close-btn');
+            const modalTitle = document.getElementById('sol360-modalTitle');
+            const modalDesc = document.getElementById('sol360-modalDesc');
+            const modalIcon = document.getElementById('sol360-modalIcon');
+
+            // Open modal on node click
+            nodes.forEach(node => {
+                node.addEventListener('click', () => {
+                    // Extract data from the clicked node
+                    const title = node.getAttribute('data-title');
+                    const detail = node.getAttribute('data-detail');
+                    const iconClass = node.getAttribute('data-icon');
+                    
+                    // Update modal content
+                    modalTitle.innerHTML = title;
+                    modalDesc.textContent = detail;
+                    
+                    // Update icon classes safely
+                    modalIcon.className = 'fas ' + iconClass;
+                    
+                    // Show modal
+                    modal.classList.add('sol360-show');
+                });
+            });
+
+            // Close modal function
+            const closeModal = () => {
+                modal.classList.remove('sol360-show');
+            };
+
+            // Close on 'X' button click
+            closeBtn.addEventListener('click', closeModal);
+
+            // Close when clicking outside the modal box (on the overlay)
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+<!-- 360 Solutions Script -->
+
 </head>
 
 <body class="homepage1-body">
+
 
   <!--===== PRELOADER STARTS =======-->
   <div class="preloader">
     <div class="loading-container">
       <div class="loading"></div>
-      <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
+      <div id="loading-icon"><img src="assets/img/logo/preloader.webp" alt=""></div>
     </div>
   </div>
   <!--===== PRELOADER ENDS =======-->
@@ -53,112 +206,117 @@
           <div class="col-lg-12">
             <div class="header-elements">
               <div class="site-logo">
-                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                <a href="index.html"><img src="assets/img/logo/logo.webp" alt=""></a>
               </div>
               <div class="main-menu">
                 <ul>
-                  <li><a href="#">Home</i></a></li>
+                  <li><a href="index.html">Home</i></a></li>
 
                   <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
                     <div class="services-mega-menu">
                       <div class="container-mega">
                         <div class="mega-columns">
-                          <!-- Microsoft Technologies -->
-                          <div class="mega-menu-item">
-                            <h5>Microsoft Technologies</h5>
+                      
+                          <div class="mega-column">
+                            <h5>Artificial Intelligence & Machine Learning</h5>
                             <ul class="mega-menu-list">
-                              <li><a href="service1.html">Visual Studio .Net</a></li>
-                              <li><a href="service1.html">Microsoft Azure</a></li>
-                              <li><a href="service1.html">SQL Server</a></li>
-                              <li><a href="service1.html">SharePoint</a></li>
+                              <li><a href="service/generative-ai.html">Generative AI</a></li>
+                              <li><a href="service/computer-vision.html">Computer Vision</a></li>
+                              <li><a href="service/predictive-analytics.html">Predictive Analytics</a></li>
+                              <li><a href="service/nlp-solutions.html">NLP Solutions</a></li>
+                            </ul>
+                            <h6>Intelligence Hub</h6>
+                            <ul class="mega-menu-list">
+                              <li><a href="service/enterprise-digital-transformation-dx.html">Enterprise Digital Transformation (DX)</a></li>
+                              <li><a href="service/blockchain-and-secure-identity.html">Blockchain & Secure Identity</a></li>
+                              <li><a href="service/gis-3d-development.html">GIS - 3D Development & Modeling</a></li>
+                              <li><a href="service/iot-services.html">IoT Services</a></li>
+                              <li><a href="service/technology-migration.html">Technology Migration</a></li>
                             </ul>
                           </div>
 
-                          <!-- Java Technologies -->
-                          <div class="mega-menu-item">
-                            <h5>Java Technologies</h5>
+                          <div class="mega-column">
+                            <h5>Mobile App Development</h5>
                             <ul class="mega-menu-list">
-                              <li><a href="service1.html">J2EE</a></li>
-                              <li><a href="service1.html">Spring Framework</a></li>
-                              <li><a href="service1.html">Hibernate</a></li>
-                              <li><a href="service1.html">Struts</a></li>
+                              <li><a href="service/ios-app-development.html">iOS App Development</a></li>
+                              <li><a href="service/android-app-development.html">Android App Development</a></li>
+                              <li><a href="service/flutter-apps.html">Flutter Apps</a></li>
+                              <li><a href="service/react-native-apps.html">React Native Apps</a></li>
+                            </ul>
+                            <h6>Software Development</h6>
+                            <ul class="mega-menu-list">
+                               <li><a href="service/saas-platforms.html">SaaS Platforms</a></li>
+                              <li><a href="service/web-development.html">Web Development</a></li>
+                              <li><a href="service/product-design-and-ideation.html">Product Design & Ideation</a></li>
+                            </ul>
+
+                            <h6>CRM & ERP Solutions</h6>
+                            <ul class="mega-menu-list">
+                              <li><a href="service/crm-systems.html">CRM Systems</a></li>
+                              <li><a href="service/salesforce.html">Salesforce</a></li>
+                              <li><a href="service/business-central.html">Business Central</a></li>
                             </ul>
                           </div>
 
-                          <!-- Web & Cloud -->
-                          <div class="mega-menu-item">
-                            <h5>Web & Cloud</h5>
+                          <div class="mega-column">
+                            <h5>Digital Marketing and E-commerce</h5>
                             <ul class="mega-menu-list">
-                              <li><a href="service1.html">WordPress</a></li>
-                              <li><a href="service1.html">Drupal</a></li>
-                              <li><a href="service1.html">Web Design</a></li>
-                              <li><a href="service1.html">Cloud Computing</a></li>
+                              <li><a href="service/seo.html">SEO/AEO</a></li>
+                              <li><a href="service/ppc.html">PPC</a></li>
+                              <li><a href="service/social-media-marketing.html">Social Media Marketing</a></li>
+                              <li><a href="service/shopify.html">Shopify</a></li>
+                            </ul>
+                            <h6>Server Support & DevOps</h6>
+                            <ul class="mega-menu-list">
+                              <li><a href="service/aws-and-cloud.html">AWS & Cloud</a></li>
+                              <li><a href="service/ci-cd-pipelines.html">CI/CD Pipelines</a></li>
+                              <li><a href="service/monitoring.html">Monitoring</a></li>
+                            </ul>
+                            <h6>Adobe Campaigns</h6>
+                            <ul class="mega-menu-list">
+                              <li><a href="service/campaign-automation.html">Campaign Automation</a></li>
+                              <li><a href="service/audience-personalization.html">Audience Personalization</a></li>
                             </ul>
                           </div>
 
-                          <!-- Enterprise Solutions -->
-                          <div class="mega-menu-item">
-                            <h5>Enterprise Solutions</h5>
+                          <div class="mega-column">
+                            <h5>QA & Testing</h5>
                             <ul class="mega-menu-list">
-                              <li><a href="service1.html">CRM Solutions</a></li>
-                              <li><a href="service1.html">ERP Solutions</a></li>
-                              <li><a href="service1.html">Data Warehouse</a></li>
-                              <li><a href="service1.html">Business Consulting</a></li>
+                              <li><a href="service/automation-testing.html">Automation Testing</a></li>
+                              <li><a href="service/manual-qa.html">Manual QA</a></li>
+                              <li><a href="service/performance-testing.html">Performance Testing</a></li>
                             </ul>
-                          </div>
-
-                          <!-- Emerging Tech -->
-                          <div class="mega-menu-item">
-                            <h5>Emerging Tech</h5>
+                            <h6>IT Consulting</h6>
                             <ul class="mega-menu-list">
-                              <li><a href="service1.html">Android</a></li>
-                              <li><a href="service1.html">iOS</a></li>
-                              <li><a href="service1.html">Python</a></li>
-                              <li><a href="service1.html">Security Services</a></li>
-                            </ul>
-                          </div>
-
-                          <!-- IT Services -->
-                          <div class="mega-menu-item">
-                            <h5>IT Services</h5>
-                            <ul class="mega-menu-list">
-                              <li><a href="service1.html">Managed Services</a></li>
-                              <li><a href="service1.html">Infrastructure</a></li>
-                              <li><a href="service1.html">Manpower Consultancy</a></li>
-                              <li><a href="service1.html">Analytics</a></li>
-                            </ul>
-                          </div>
-
-                          <!-- Adobe Campaign -->
-                          <div class="mega-menu-item">
-                            <h5>Adobe Campaign</h5>
-                            <ul class="mega-menu-list">
-                              <li><a href="service1.html">Campaign Management</a></li>
-                              <li><a href="service1.html">Email Marketing</a></li>
-                              <li><a href="service1.html">Automation</a></li>
-                              <li><a href="service1.html">Analytics</a></li>
-                            </ul>
-                          </div>
-
-                          <!-- SEO and Digital Marketing -->
-                          <div class="mega-menu-item">
-                            <h5>SEO & Digital Marketing</h5>
-                            <ul class="mega-menu-list">
-                              <li><a href="service1.html">SEO Optimization</a></li>
-                              <li><a href="service1.html">Content Marketing</a></li>
-                              <li><a href="service1.html">Social Media Marketing</a></li>
-                              <li><a href="service1.html">PPC Advertising</a></li>
+                              <li><a href="service/technology-roadmap.html">Technology Roadmap</a></li>
+                               <li><a href="service/architecture-design.html">Architecture Design</a></li>
+                              <li><a href="service/ui-ux.html">UI/UX</a></li>
+                              <li><a href="service/staff-augmentation.html">Staff Augmentation</a></li>
+                              <li><a href="service/mvp-design.html">MVP Design</a></li>
                             </ul>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
+                  <li><a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-padding">
+                      <li><a href="e-commerce.html">e-Commerce</a></li>
+                      <li><a href="healthcare.html">HealthCare</a></li>
+                      <li><a href="tourism.html">Tourism</a></li>
+                      <li><a href="hospitality.html">Hospitality</a></li>
+                      <li><a href="automotive.html">Automotive</a></li>
+                      <li><a href="telecom.html">Telecom</a></li>
+                      <li><a href="infrastructure.html">Infrastructure</a></li>
+                      <li><a href="manufacturing.html">Manufacturing</a></li>
+                      <li><a href="financial-services.html">Financial Services</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">Insights <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="dropdown-padding">
                       <li><a href="case.html">Case Study</a></li>
-                      <li><a href="team.html">Our Team</a></li>
-                      <li><a href="404.html">Career</a></li>
+                      
+                      <li><a href="career.html">Career</a></li>
                     </ul>
                   </li>
                   <li><a href="about.html">About</a></li>
@@ -166,9 +324,7 @@
                 </ul>
               </div>
               <div class="btn-area">
-                <div class="search-icon header__search header-search-btn">
-                  <a href="#"><img src="assets/img/icons/search-icons1.svg" alt=""></a>
-                </div>
+                
                 <a href="contact.html" class="header-btn1">Contact Now <span><i
                       class="fa-solid fa-arrow-right"></i></span></a>
               </div>
@@ -198,7 +354,7 @@
       <div class="col-12">
         <div class="mobile-header-elements">
           <div class="mobile-logo">
-            <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+            <a href="index.html"><img src="assets/img/logo/logo.webp" alt=""></a>
           </div>
           <div class="mobile-nav-icon dots-menu">
             <i class="fa-solid fa-bars"></i>
@@ -211,7 +367,7 @@
   <div class="mobile-sidebar mobile-sidebar1">
     <div class="logosicon-area">
       <div class="logos">
-        <img src="assets/img/logo/logo.png" alt="">
+        <img src="assets/img/logo/logo.webp" alt="">
       </div>
       <div class="menu-close">
         <i class="fa-solid fa-xmark"></i>
@@ -219,81 +375,105 @@
     </div>
     <div class="mobile-nav mobile-nav1">
       <ul class="mobile-nav-list nav-list1">
-        <li><a href="#">Home </a></li>
+        <li><a href="index.html">Home </a></li>
 
         <li><a href="#">Services</a>
           <ul class="sub-menu">
-            <li><a href="#">Microsoft Technologies</a>
+            <li><a href="#">Artificial Intelligence & Machine Learning</a>
               <ul class="sub-menu">
-                <li><a href="service1.html">Visual Studio .Net</a></li>
-                <li><a href="service1.html">Microsoft Azure</a></li>
-                <li><a href="service1.html">SQL Server</a></li>
-                <li><a href="service1.html">SharePoint</a></li>
+                <li><a href="service/generative-ai.html">Generative AI</a></li>
+                <li><a href="service/computer-vision.html">Computer Vision</a></li>
+                <li><a href="service/predictive-analytics.html">Predictive Analytics</a></li>
+                <li><a href="service/nlp-solutions.html">NLP Solutions</a></li>
               </ul>
             </li>
-            <li><a href="#">Java Technologies</a>
+            <li><a href="#">Mobile App Development</a>
               <ul class="sub-menu">
-                <li><a href="service1.html">J2EE</a></li>
-                <li><a href="service1.html">Spring Framework</a></li>
-                <li><a href="service1.html">Hibernate</a></li>
-                <li><a href="service1.html">Struts</a></li>
+                <li><a href="service/ios-app-development.html">iOS App Development</a></li>
+                <li><a href="service/android-app-development.html">Android App Development</a></li>
+                <li><a href="service/flutter-apps.html">Flutter Apps</a></li>
+                <li><a href="service/react-native-apps.html">React Native Apps</a></li>
               </ul>
             </li>
-            <li><a href="#">Web & Cloud</a>
+             <li><a href="#">Software Development</a>
               <ul class="sub-menu">
-                <li><a href="service1.html">WordPress</a></li>
-                <li><a href="service1.html">Drupal</a></li>
-                <li><a href="service1.html">Web Design</a></li>
-                <li><a href="service1.html">Cloud Computing</a></li>
+                 <li><a href="service/saas-platforms.html">SaaS Platforms</a></li>
+                              <li><a href="service/web-development.html">Web Development</a></li>
+                              <li><a href="service/product-design-and-ideation.html">Product Design & Ideation</a></li>
               </ul>
             </li>
-            <li><a href="#">Enterprise Solutions</a>
+            <li><a href="#">CRM & ERP Solutions</a>
               <ul class="sub-menu">
-                <li><a href="service1.html">CRM Solutions</a></li>
-                <li><a href="service1.html">ERP Solutions</a></li>
-                <li><a href="service1.html">Data Warehouse</a></li>
-                <li><a href="service1.html">Business Consulting</a></li>
+                <li><a href="service/crm-systems.html">CRM Systems</a></li>
+                <li><a href="service/salesforce.html">Salesforce</a></li>
+                <li><a href="service/business-central.html">Business Central</a></li>
               </ul>
             </li>
-            <li><a href="#">Emerging Tech</a>
+            <li><a href="#">Digital Marketing and E-commerce</a>
               <ul class="sub-menu">
-                <li><a href="service1.html">Android</a></li>
-                <li><a href="service1.html">iOS</a></li>
-                <li><a href="service1.html">Python</a></li>
-                <li><a href="service1.html">Security Services</a></li>
+                <li><a href="service/seo.html">SEO/AEO</a></li>
+                <li><a href="service/ppc.html">PPC</a></li>
+                <li><a href="service/social-media-marketing.html">Social Media Marketing</a></li>
+                <li><a href="service/shopify.html">Shopify</a></li>
               </ul>
             </li>
-            <li><a href="#">IT Services</a>
+            <li><a href="#">Adobe Campaigns</a>
               <ul class="sub-menu">
-                <li><a href="service1.html">Managed Services</a></li>
-                <li><a href="service1.html">Infrastructure</a></li>
-                <li><a href="service1.html">Manpower Consultancy</a></li>
-                <li><a href="service1.html">Analytics</a></li>
+                <li><a href="service/campaign-automation.html">Campaign Automation</a></li>
+                <li><a href="service/audience-personalization.html">Audience Personalization</a></li>
               </ul>
             </li>
-            <li><a href="#">Adobe Campaign</a>
+            <li><a href="#">Server Support & DevOps</a>
               <ul class="sub-menu">
-                <li><a href="service1.html">Campaign Management</a></li>
-                <li><a href="service1.html">Email Marketing</a></li>
-                <li><a href="service1.html">Automation</a></li>
-                <li><a href="service1.html">Analytics</a></li>
+                <li><a href="service/aws-and-cloud.html">AWS & Cloud</a></li>
+                <li><a href="service/ci-cd-pipelines.html">CI/CD Pipelines</a></li>
+                <li><a href="service/monitoring.html">Monitoring</a></li>
               </ul>
             </li>
-            <li><a href="#">SEO & Digital Marketing</a>
+            <li><a href="#">QA & Testing</a>
               <ul class="sub-menu">
-                <li><a href="service1.html">SEO Optimization</a></li>
-                <li><a href="service1.html">Content Marketing</a></li>
-                <li><a href="service1.html">Social Media Marketing</a></li>
-                <li><a href="service1.html">PPC Advertising</a></li>
+                <li><a href="service/automation-testing.html">Automation Testing</a></li>
+                <li><a href="service/manual-qa.html">Manual QA</a></li>
+                <li><a href="service/performance-testing.html">Performance Testing</a></li>
               </ul>
             </li>
+            <li><a href="#">IT Consulting</a>
+              <ul class="sub-menu">
+                <li><a href="service/technology-roadmap.html">Technology Roadmap</a></li>
+                <li><a href="service/architecture-design.html">Architecture Design</a></li>
+                <li><a href="service/ui-ux.html">UI/UX</a></li>
+                <li><a href="service/staff-augmentation.html">Staff Augmentation</a></li>
+                <li><a href="service/mvp-design.html">MVP Design</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Intelligence Hub</a>
+              <ul class="sub-menu">
+                <li><a href="service/enterprise-digital-transformation-dx.html">Enterprise Digital Transformation (DX)</a></li>
+                <li><a href="service/blockchain-and-secure-identity.html">Blockchain & Secure Identity</a></li>
+                <li><a href="service/gis-3d-development.html">GIS - 3D Development & Modeling</a></li>
+                <li><a href="service/iot-services.html">IoT Services</a></li>
+                <li><a href="service/technology-migration.html">Technology Migration</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Industries</a>
+          <ul class="sub-menu">
+            <li><a href="e-commerce.html">e-Commerce</a></li>
+            <li><a href="healthcare.html">HealthCare</a></li>
+            <li><a href="tourism.html">Tourism</a></li>
+            <li><a href="hospitality.html">Hospitality</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li><a href="telecom.html">Telecom</a></li>
+            <li><a href="infrastructure.html">Infrastructure</a></li>
+            <li><a href="manufacturing.html">Manufacturing</a></li>
+            <li><a href="financial-services.html">Financial Services</a></li>
           </ul>
         </li>
         <li><a href="#">Insights</a>
           <ul class="sub-menu">
             <li><a href="case.html">Case Study</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="404.html">Career</a></li>
+            <li><a href="career.html">Career</a></li>
           </ul>
         </li>
         <li><a href="about.html">About</a></li>
@@ -335,16 +515,24 @@
                 </div>
               </div>
 
+              <div class="contact-info-single">
+                <div class="contact-info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-info-text">
+                  <a href="#">E-5 lane no.1, Westend Marg,<br>New Delhi, Delhi 110030, India</a>
+                </div>
+              </div>
+
             </div>
             <div class="single-footer">
               <h3>Social Links</h3>
 
               <div class="social-links-mobile-menu">
                 <ul>
-                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                  <li><a href="https://www.facebook.com/share/18BqGeXXPq/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.linkedin.com/company/magathconsultants/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="https://x.com/Magath_India" target="_blank" rel="noopener noreferrer"><img style="padding-bottom: 6px;" src="assets/img/icons/twitter1.svg" alt=""></a></li>
                 </ul>
               </div>
             </div>
@@ -356,9 +544,9 @@
   <!--===== MOBILE HEADER STARTS =======-->
 
   <!--===== HERO AREA STARTS =======-->
-  <div class="hero1-section-area" style="background-image: url(assets/img/bg/header-bg1.png);">
+  <div class="hero1-section-area pb-lg-5" style="background-image: url(assets/img/bg/home_bg_01.webp);">
     <img src="assets/img/elements/elements1.png" alt="" class="elements1 aniamtion-key-1">
-    <div class="container">
+    <div class="container" style="padding-bottom: 50px;">
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="header-main-content heading1">
@@ -369,34 +557,12 @@
             <div class="btn-area" data-aos="fade-left" data-aos-duration="1200">
               <a href="contact.html" class="header-btn1">Grow Your Bussiness <span><i
                     class="fa-solid fa-arrow-right"></i></span></a>
-              <a href="contact.html" class="header-btn2">Book a Free Consultation <span><i
-                    class="fa-solid fa-arrow-right"></i></span></a>
+             
             </div>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="header-images-area">
-            <div class="main-images-area">
-              <div class="img1">
-                <img src="assets/img/all-images/header-img1.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
-              </div>
-              <div class="img2">
-                <img src="assets/img/bg/header-imgbg.png" alt="">
-              </div>
-              <!-- <div class="icons-area">
-              <img src="assets/img/icons/sound-icons1.svg" alt="" class="sound-icons1 aniamtion-key-1">
-              <img src="assets/img/icons/lite-icons1.svg" alt="" class="lite-icons1 aniamtion-key-1">
-            </div> -->
-              <!-- <div class="auhtor-icons">
-              <img src="assets/img/elements/elements2.png" alt="" class="elements2">
-              <img src="assets/img/elements/elements3.png" alt="" class="elements3">
-            </div> -->
-              <!-- <div class="auhtor-images">
-              <img src="assets/img/all-images/sales_header_image.png" alt="" class="header-author-img1 aniamtion-key-2">
-              <img src="assets/img/all-images/html_header_img.png" alt="" class="header-author-img2 aniamtion-key-2">
-            </div> -->
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -414,6 +580,9 @@
         </div>
         <div class="col-lg-10">
           <div class="slider-images-area owl-carousel">
+            <div class="img1">
+              <img src="assets/img/elements/brand-img.png" alt="">
+            </div>
             <div class="img1">
               <img src="assets/img/elements/brand-img1.png" alt="">
             </div>
@@ -438,6 +607,27 @@
             <div class="img1">
               <img src="assets/img/elements/brand-img8.png" alt="">
             </div>
+            <div class="img1">
+              <img src="assets/img/elements/brand-img9.png" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/JR logo.png" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/pronglint.webp" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/bmw.webp" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/anantRaj.png" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/syenr.png" alt="">
+            </div>
+            <div class="img1">
+              <img src="assets/img/elements/mireya.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -447,7 +637,7 @@
   <div class="all-section-bg"
     style="background-image: url(assets/img/bg/pages-bg1.png); background-repeat: no-repeat; background-size: cover;">
     <!--===== ABOUT AREA STARTS =======-->
-    <div class="about8-section-area">
+    <div class="about8-section-area pb-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-2">
@@ -486,7 +676,7 @@
 
           <div class="col-lg-4">
             <div class="images" data-aos="zoom-in" data-aos-duration="1000">
-              <img src="assets/img/all-images/about-img.jpg" alt="">
+              <img src="assets/img/all-images/about-img.webp" alt="">
             </div>
           </div>
           <div class="col-lg-6">
@@ -510,6 +700,80 @@
     </div>
     <!--===== ABOUT AREA ENDS =======-->
 
+     <!--===== 360 Solution AREA STARTS =======-->
+ <div class="sol360-wrapper">
+        <div class="sol360-container">
+            
+            <header class="sol360-header">
+                <div class="sol360-title-area">
+                    <h1>One Stop Solutions</h1>
+                    <p>Magath Consultants delivers comprehensive, end-to-end solutions to transform your business ideas from concept to execution. We ensure seamless integration across strategy, resources, and implementation to achieve measurable outcomes.</p>
+                </div>
+                <div class="btn-area1" data-aos="fade-right" data-aos-duration="1200">
+                <a style="padding: 8px 16px;" href="contact.html" class="header-btn15">Contact Now <span><i
+                      class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </header>
+
+            <div class="sol360-diagram-section">
+                
+                <div class="sol360-ring-outer"></div>
+                <div class="sol360-ring-inner"></div>
+                
+                <div class="sol360-center-circle">
+                   <img src="assets/img/logo/preloader.webp" style="width: 45%;" />
+                </div>
+
+                <div class="sol360-node sol360-node-left" style="top: 25%; left: 6.7%;" data-title="End-to-End Concept Development" data-icon="fa-lightbulb" data-detail="From ideation to execution, we provide complete lifecycle support, including planning, design, development, and deployment of business and technology solutions.">
+                    <div class="sol360-text-content">
+                        <h3>End-to-End Concept<br>Development</h3>
+                        <p>Complete lifecycle support from ideation to deployment.</p>
+                    </div>
+                    <div class="sol360-icon-circle"><i class="fas fa-lightbulb"></i></div>
+                </div>
+
+                <div class="sol360-node sol360-node-left" style="top: 75%; left: 6.7%;" data-title="Business-Centric Procurement" data-icon="fa-briefcase" data-detail="Advisory and execution support for procurement of technology, infrastructure, hardware, software licenses, and third-party integrations aligned with business objectives.">
+                    <div class="sol360-text-content">
+                        <h3>Business-Centric<br>Procurement</h3>
+                        <p>Advisory and support for tech and infrastructure procurement.</p>
+                    </div>
+                    <div class="sol360-icon-circle"><i class="fas fa-briefcase"></i></div>
+                </div>
+
+                <div class="sol360-node sol360-node-right" style="top: 25%; left: 93.3%;" data-title="Resource & Workforce Management" data-icon="fa-users" data-detail="Strategic staffing solutions, including onboarding of specialized consultants, project-based teams, and skilled manpower tailored to project requirements.">
+                    <div class="sol360-icon-circle"><i class="fas fa-users"></i></div>
+                    <div class="sol360-text-content">
+                        <h3>Resource & Workforce<br>Management</h3>
+                        <p>Strategic staffing and specialized consultant onboarding.</p>
+                    </div>
+                </div>
+
+                <div class="sol360-node sol360-node-right" style="top: 75%; left: 93.3%;" data-title="Campaign & Promotion Strategy" data-icon="fa-bullseye" data-detail="Design and execution of targeted marketing campaigns, branding initiatives, and promotion strategies to enhance business visibility and growth.">
+                    <div class="sol360-icon-circle"><i class="fas fa-bullseye"></i></div>
+                    <div class="sol360-text-content">
+                        <h3>Campaign & Promotion<br>Strategy</h3>
+                        <p>Targeted marketing and branding for business growth.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup Structure -->
+    <div id="sol360-detailModal" class="sol360-modal-overlay">
+        <div class="sol360-modal-content">
+            <span class="sol360-close-btn">&times;</span>
+            <h2><i id="sol360-modalIcon" class="fas"></i> <span id="sol360-modalTitle">Title</span></h2>
+            <div class="sol360-modal-body">
+                <p id="sol360-modalDesc">Detail description will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+     <!--===== 360 Solution AREA STARTS =======-->
+
+
     <!--===== SERVICE AREA STARTS =======-->
     <div class="service13-section-area sp2" style="background: inherit;">
       <div class="container">
@@ -522,7 +786,7 @@
                 <h2 class="text-anime-style-3">Tailored Solutions For <br class="d-md-block d-none"> Every Brand</h2>
               </div>
               <div class="btn-area1">
-                <a href="service1.html" class="header-btn21">View All Service <i
+                <a href="service.html" class="header-btn21">View All Service <i
                     class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
@@ -536,14 +800,14 @@
               </div>
               <div class="space32"></div>
               <div class="content-area">
-                <a href="service1.html" class="head">CRM, ERP Development, Integration & Implementation</a>
+                <a href="service.html" class="head">CRM, CRM & ERP Solutions, Integration & Implementation</a>
                 <div class="space16"></div>
                 <p>We specialize in designing, developing, and implementing robust CRM and ERP solutions tailored to
                   your business needs. Our services include seamless system integration, data migration, customization,
                   and end-to-end implementation to streamline operations, enhance customer relationships, and drive
                   business efficiency.</p>
                 <div class="space24"></div>
-                <a href="service1.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 <h2>01</h2>
               </div>
             </div>
@@ -555,14 +819,14 @@
               </div>
               <div class="space32"></div>
               <div class="content-area">
-                <a href="service1.html" class="head">Web, Mobile, Cloud & Windows App Development and Services</a>
+                <a href="service.html" class="head">Web, Mobile, Cloud & Windows App Development and Services</a>
                 <div class="space16"></div>
                 <p>We deliver high-performance web applications, mobile apps (Android & iOS), Windows applications, and
                   cloud-based solutions using modern technologies. From responsive websites and scalable mobile &
                   desktop platforms to secure cloud architecture and DevOps, we provide complete digital solutions that
                   ensure speed, reliability, and seamless user experience.</p>
                 <div class="space24"></div>
-                <a href="service1.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 <h2>02</h2>
               </div>
             </div>
@@ -575,14 +839,14 @@
               </div>
               <div class="space32"></div>
               <div class="content-area">
-                <a href="service1.html" class="head">Adobe Campaign Services</a>
+                <a href="service.html" class="head">Adobe Campaign Services</a>
                 <div class="space16"></div>
                 <p>We offer expert Adobe Campaign Services including implementation, customization, integration, and
                   management of Adobe Campaign Classic and Adobe Campaign Standard. Our team helps businesses design,
                   automate, and optimize multi-channel marketing campaigns with advanced segmentation, personalization,
                   workflow automation, and detailed analytics to maximize customer engagement.</p>
                 <div class="space24"></div>
-                <a href="service1.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 <h2>03</h2>
               </div>
             </div>
@@ -595,14 +859,14 @@
               </div>
               <div class="space32"></div>
               <div class="content-area">
-                <a href="service1.html" class="head">GIS Development & 3D Mesh Model Creation</a>
+                <a href="service.html" class="head">GIS Development & 3D Mesh Model Creation</a>
                 <div class="space16"></div>
                 <p>Our GIS (Geographic Information System) development services enable businesses and organizations to
                   visualize, analyze, and interpret spatial data effectively. We build custom GIS applications,
                   interactive maps, location-based solutions, and 3D Mesh Model Creation to support advanced spatial
                   analytics and visualization in sectors like urban planning, logistics, and engineering.</p>
                 <div class="space24"></div>
-                <a href="service1.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 <h2>04</h2>
               </div>
             </div>
@@ -615,15 +879,34 @@
               </div>
               <div class="space32"></div>
               <div class="content-area">
-                <a href="service1.html" class="head">Hospitality POS Development, Integration & Implementation</a>
+                <a href="service.html" class="head">Hospitality POS Development, Integration & Implementation</a>
                 <div class="space16"></div>
                 <p>We provide specialized Point of Sale (POS) systems for the hospitality industry (hotels, restaurants,
                   bars, and cafes). Our solutions include feature-rich POS development, third-party integrations
                   (billing, kitchen display, inventory, CRM), and smooth implementation to improve order management,
                   table management, billing speed, and overall guest experience.</p>
                 <div class="space24"></div>
-                <a href="service1.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 <h2>05</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1200">
+            <div class="service13-boxarea">
+              <div class="icons">
+                <img src="assets/img/icons/service-icons27.svg" alt="">
+              </div>
+              <div class="space32"></div>
+              <div class="content-area">
+                <a href="service.html" class="head">Staff Augmentation</a>
+                <div class="space16"></div>
+                <p>We provide skilled IT professionals across development, testing, cloud, and emerging technologies who integrate seamlessly with your team.
+This model accelerates delivery by eliminating hiring delays and enables flexible scaling based on project needs.
+Our experts work under your direction, aligned with your processes and business goals.
+Ensure efficient, cost-effective, and reliable project execution with on-demand technical talent.</p>
+                <div class="space24"></div>
+                <a href="service.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <h2>06</h2>
               </div>
             </div>
           </div>
@@ -656,7 +939,7 @@
           <div class="col-lg-7">
             <div class="case-images" data-aos="zoom-in" data-aos-duration="1000">
               <figure class="image-anime reveal">
-                <img src="assets/img/all-images/our_vision.png" alt="">
+                <img src="assets/img/all-images/our_vision.webp" alt="">
               </figure>
             </div>
           </div>
@@ -667,115 +950,138 @@
     </div>
     <!--===== WORK AREA ENDS =======-->
 
-    <!--===== CASE AREA STARTS =======-->
-    <div class="case1-section-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 m-auto">
-            <div class="case-header-area heading2 text-center">
-              <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
-              <img src="assets/img/elements/star2.png" alt="" class="star3 keyframe5">
-              <h2 class="text-anime-style-3">Architecting Intelligent Paths: Real-World Solutions</h2>
-              <p data-aos="fade-up" data-aos-duration="1000">Explore how Magath Consultant leverages innovative
-                technology solutions to create smart, </br> scalable, and efficient digital futures, a direct
-                application of our vision for client success.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12" data-aos="zoom-out" data-aos-duration="1200">
-            <div class="cs_case_study_1_list">
-              <div class="cs_case_study cs_style_1 cs_hover_active active" data-aos="fade-up" data-aos-duration="800">
-                <a href="case-single.html" class="cs_case_study_thumb cs_bg_filed"
-                  data-src="assets/img/all-images/case-img1.png"></a>
-                <div class="content-area1">
-                  <a href="case-single.html">Website Design & Development</a>
-                </div>
-                <div class="content-area">
-                  <a href="case-single.html">Website Design & Development </a>
-                  <p>We understand the critical role that a well-designed and user-friendly website plays in shaping
-                    your online presence driving.</p>
-                </div>
-              </div>
-              <div class="cs_case_study cs_style_1 cs_hover_active" data-aos="fade-up" data-aos-duration="900">
-                <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb2 cs_bg_filed"
-                  data-src="assets/img/all-images/case-img2.png"></a>
-                <div class="content-area1">
-                  <a href="case-single.html">SEO</a>
-                </div>
-                <div class="content-area">
-                  <a href="case-single.html">SEO</a>
-                  <p>We understand the critical role that a well-designed and user-friendly website plays in shaping
-                    your online presence driving.</p>
-                </div>
-              </div>
-              <div class="cs_case_study cs_style_1 cs_hover_active" data-aos="fade-up" data-aos-duration="1000">
-                <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb3 cs_bg_filed"
-                  data-src="assets/img/all-images/case-img3.png"></a>
-                <div class="content-area1">
-                  <a href="case-single.html">PPC Advertising</a>
-                </div>
-                <div class="content-area">
-                  <a href="case-single.html">PPC Advertising</a>
-                  <p>We understand the critical role that a well-designed and user-friendly website plays in shaping
-                    your online presence driving.</p>
-                </div>
-              </div>
-              <div class="cs_case_study cs_style_1 cs_hover_active" data-aos="fade-up" data-aos-duration="1100">
-                <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb4 cs_bg_filed"
-                  data-src="assets/img/all-images/case-img4.png"></a>
-                <div class="content-area1">
-                  <a href="case-single.html">Social Media Marketing</a>
-                </div>
-                <div class="content-area">
-                  <a href="case-single.html">Social Media Marketing</a>
-                  <p>We understand the critical role that a well-designed and user-friendly website plays in shaping
-                    your online presence driving.</p>
-                </div>
-              </div>
-              <div class="cs_case_study cs_style_1 cs_hover_active" data-aos="fade-up" data-aos-duration="1200">
-                <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb5 cs_bg_filed"
-                  data-src="assets/img/all-images/case-img5.png"></a>
-                <div class="content-area1">
-                  <a href="case-single.html">Content Marketing</a>
-                </div>
-                <div class="content-area">
-                  <a href="case-single.html">Content Marketing</a>
-                  <p>We understand the critical role that a well-designed and user-friendly website plays in shaping
-                    your online presence driving.</p>
-                </div>
-              </div>
-              <div class="cs_case_study cs_style_1 cs_hover_active" data-aos="fade-up" data-aos-duration="1300">
-                <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb6 cs_bg_filed"
-                  data-src="assets/img/all-images/case-img6.png"></a>
-                <div class="content-area1">
-                  <a href="case-single.html">Email Marketing</a>
-                </div>
-                <div class="content-area">
-                  <a href="case-single.html">Email Marketing</a>
-                  <p>We understand the critical role that a well-designed and user-friendly website plays in shaping
-                    your online presence driving.</p>
-                </div>
-              </div>
-              <div class="cs_case_study cs_style_1 cs_hover_active " style="margin: 0 !important;" data-aos="fade-up"
-                data-aos-duration="1400">
-                <a href="case-single.html" class="cs_case_study_thumb cs_case_study_thumb7 cs_bg_filed"
-                  data-src="assets/img/all-images/case-img7.png"></a>
-                <div class="content-area1">
-                  <a href="case-single.html">Analytics & Reporting</a>
-                </div>
-                <div class="content-area">
-                  <a href="case-single.html">Analytics & Reporting</a>
-                  <p>We understand the critical role that a well-designed and user-friendly website plays in shaping
-                    your online presence driving.</p>
-                </div>
-              </div>
-            </div>
+  <!--===== Product AREA STARTS =======-->
+  <div class="case1-section-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 m-auto">
+          <div class="case-header-area heading2 text-center">
+            <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
+            <img src="assets/img/elements/star2.png" alt="" class="star3 keyframe5">
+            <h2 class="text-anime-style-3">Architecting Intelligent Paths: Real-World Solutions</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Explore how Magath Consultant leverages innovative
+              technology solutions to create smart, </br> scalable, and efficient digital futures, a direct
+              application of our vision for client success.</p>
           </div>
         </div>
       </div>
     </div>
-    <!--===== CASE AREA ENDS =======-->
+  </div>
+  
+
+  <div class="blog1-scetion-area bg2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <a href="#" class="product-image-trigger" data-title="Vidur Prerna Portal" data-image="assets/img/product/product-img2.jpeg" data-description="A web and mobile app initiative by District Administration (Bijnor, Uttar Pradesh) for controlled registration of rural entrepreneurs, especially women producer groups. It includes product inventory management to scale orders to distributors and retailers, with complete ledgers for profit, loss, and balance sheet tracking.">
+                <img src="assets/img/product/product-img2.jpeg" alt="Vidur Prerna Portal">
+              </a>
+            </div>
+            <div class="content-area">
+              <a href="service.html">Vidur Prerna Portal</a>
+              <p>A web and mobile app initiative enabling controlled rural entrepreneur registration and inventory-led scale.</p>
+              <a href="service.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="space30"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <a href="#" class="product-image-trigger" data-title="HRMS (Human Resource Management System)" data-image="assets/img/product/product-img3.webp" data-description="Comprehensive HR solution for managing the full employee lifecycle, including onboarding, payroll, attendance, leave, and performance tracking. The platform is designed to reduce manual operations, improve compliance, and offer management-level visibility for better workforce planning.">
+                <img src="assets/img/product/product-img3.webp" alt="HRMS">
+              </a>
+            </div>
+            <div class="content-area">
+              <a href="service.html">HRMS (Human Resource Management System)</a>
+              <p>Comprehensive HR solution for payroll, attendance, leave, and performance tracking.</p>
+              <a href="service.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="space30"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <a href="#" class="product-image-trigger" data-title="Hospital Management System" data-image="assets/img/product/product-img5.jpeg" data-description="Integrated healthcare management system for hospitals and clinics to handle patient records, OPD/IPD workflows, appointments, diagnostics, pharmacy, billing, and reporting. The solution streamlines operations and improves service quality through centralized data and process automation.">
+                <img src="assets/img/product/product-img5.jpeg" alt="Hospital Management System">
+              </a>
+            </div>
+            <div class="content-area">
+              <a href="service.html">Hospital Management System</a>
+              <p>Integrated platform for patient records, appointments, billing, and hospital operations.</p>
+              <a href="service.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="space30"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <a href="#" class="product-image-trigger" data-title="mBot" data-image="assets/img/product/mBot_product.webp" data-description="mBot is an AI-powered chat agent that assists users in real time, answers frequently asked questions, guides navigation, and boosts customer engagement. It is designed for rapid deployment and can be customized for support workflows across websites and digital platforms.">
+                <img src="assets/img/product/mBot_product.webp" alt="mBot">
+              </a>
+            </div>
+            <div class="content-area">
+              <a href="service.html">mBot</a>
+              <p>AI-powered chat agent to assist users, handle inquiries, and improve engagement.</p>
+              <a href="service.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="space30"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <a href="#" class="product-image-trigger" data-title="Supportly" data-image="assets/img/product/product-img6.jpeg" data-description="Supportly is an end-to-end support, maintenance, and monitoring AI platform for web and mobile applications. It uses intelligent agents to detect, track, and resolve medium-level issues proactively, and escalates complex tasks to the right technical resources with structured approval workflows.">
+                <img src="assets/img/product/product-img6.jpeg" alt="Supportly">
+              </a>
+            </div>
+            <div class="content-area">
+              <a href="service.html">Supportly</a>
+              <p>AI platform for support, maintenance, and monitoring across frontend, backend, and APIs.</p>
+              <a href="service.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="space30"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-author-boxarea">
+            <div class="img1">
+              <a href="#" class="product-image-trigger" data-title="Namaste Drives" data-image="assets/img/product/namaste_drives.png" data-description="Namaste Drives is a car rental solution built for hassle-free booking and trip management. The platform supports vehicle discovery, booking workflows, and customer convenience features to deliver a smooth mobility experience for both short and long-duration rentals.">
+                <img src="assets/img/product/namaste_drives.png" alt="Namaste Drives">
+              </a>
+            </div>
+            <div class="content-area">
+              <a href="service.html">Namaste Drives</a>
+              <p>Your trusted partner for hassle-free car rentals, anytime and anywhere.</p>
+              <a href="service.html" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="space30"></div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="product-image-modal" id="productImageModal" aria-hidden="true">
+    <div class="product-image-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="productImageModalTitle">
+      <button type="button" class="product-image-modal-close" id="productImageModalClose" aria-label="Close">x</button>
+      <img id="productImageModalImg" src="" alt="Product image preview">
+      <h4 id="productImageModalTitle"></h4>
+      <p id="productImageModalDescription"></p>
+    </div>
+  </div>
+  <!--===== Product AREA ENDS =======-->
+
 
     <!--===== TESTIMONIAL AREA STARTS =======-->
     <div class="testimonial8-section-area sp1" style="background: inherit;">
@@ -795,7 +1101,7 @@
                 <p>"Working with this team significantly improved our campaign reach and engagement. Their strategic
                   approach and execution excellence have been invaluable to our marketing success."</p>
                 <div class="space48"></div>
-                <div class="auhtor-logo">
+                <div class="auhtor-logo homepage-auhtor-logo">
                   <div class="text"><a href="team.html">Gaurav Sharma</a>
                     <div style="margin-top: 8px; border-top: 2px solid #f39c12; padding-top: 8px;"><p style="font-size: 12px; font-weight: 600; color: #333; margin: 0 0 4px 0;">Group GM Marketing</p><p style="font-size: 11px; color: #888; margin: 0; font-weight: 500;">Anant Raj Limited</p></div>
                     <ul>
@@ -806,14 +1112,14 @@
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                   </div>
-                  <div class="logo"><img src="assets/img/icons/google1.svg" alt=""></div>
+                  <div class="logo"><img class="testimonialimg" src="assets/img/elements/brand-img1.png" alt=""></div>
                 </div>
               </div>
               <div class="testimonial-boxarea"><img src="assets/img/icons/quito5.svg" alt="" class="quito">
                 <p>"Their ability to seamlessly combine campaign execution with POS development creates integrated
                   solutions that drive business value. Exceptional technical expertise and business acumen."</p>
                 <div class="space48"></div>
-                <div class="auhtor-logo">
+                <div class="auhtor-logo homepage-auhtor-logo">
                   <div class="text"><a href="team.html">Shailendra Dixit</a>
                     <div style="margin-top: 8px; border-top: 2px solid #f39c12; padding-top: 8px;"><p style="font-size: 12px; font-weight: 600; color: #333; margin: 0 0 4px 0;">CTO</p><p style="font-size: 11px; color: #888; margin: 0; font-weight: 500;">TLC Digitech</p></div>
                     <ul>
@@ -824,7 +1130,7 @@
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                   </div>
-                  <div class="logo"><img src="assets/img/icons/google1.svg" alt=""></div>
+                  <div class="logo"><img src="assets/img/elements/brand-img6.png" class="testimonialimg" alt="TLC Digitech"></div>
                 </div>
               </div>
               <div class="testimonial-boxarea"><img src="assets/img/icons/quito5.svg" alt="" class="quito">
@@ -832,7 +1138,7 @@
                   was smooth and the system has proven to be reliable and user-friendly for our entire organization."
                 </p>
                 <div class="space48"></div>
-                <div class="auhtor-logo">
+                <div class="auhtor-logo homepage-auhtor-logo">
                   <div class="text"><a href="team.html">C.B Mishra</a>
                     <div style="margin-top: 8px; border-top: 2px solid #f39c12; padding-top: 8px;"><p style="font-size: 12px; font-weight: 600; color: #333; margin: 0 0 4px 0;">Managing Director</p><p style="font-size: 11px; color: #888; margin: 0; font-weight: 500;">Hanwha Ocean India</p></div>
                     <ul>
@@ -843,7 +1149,7 @@
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                   </div>
-                  <div class="logo"><img src="assets/img/icons/google1.svg" alt=""></div>
+                  <div class="logo"><img class="testimonialimg" style="width: 125px; max-width: 125px !important;" src="assets/img/elements/brand-img.png" alt="Hanwha Ocean India"></div>
                 </div>
               </div>
               <div class="testimonial-boxarea"><img src="assets/img/icons/quito5.svg" alt="" class="quito">
@@ -851,7 +1157,7 @@
                   comprehensive solution for our complex engineering requirements. Outstanding quality and technical
                   support."</p>
                 <div class="space48"></div>
-                <div class="auhtor-logo">
+                <div class="auhtor-logo homepage-auhtor-logo">
                   <div class="text"><a href="team.html">S.K Senapati</a>
                     <div style="margin-top: 8px; border-top: 2px solid #f39c12; padding-top: 8px;"><p style="font-size: 12px; font-weight: 600; color: #333; margin: 0 0 4px 0;">Senior Manager</p><p style="font-size: 11px; color: #888; margin: 0; font-weight: 500;">Bridge & Roof Co. (I) Ltd.</p></div>
                     <ul>
@@ -862,7 +1168,7 @@
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                   </div>
-                  <div class="logo"><img src="assets/img/icons/google1.svg" alt=""></div>
+                  <div class="logo"><img class="testimonialimg" src="assets/img/elements/brand-img4.png" alt="Bridge & Roof Co"></div>
                 </div>
               </div>
               <div class="testimonial-boxarea"><img src="assets/img/icons/quito5.svg" alt="" class="quito">
@@ -870,7 +1176,7 @@
                   exceptional versatility and project management skills. They have been a trusted technology partner for
                   our growth initiatives."</p>
                 <div class="space48"></div>
-                <div class="auhtor-logo">
+                <div class="auhtor-logo homepage-auhtor-logo">
                   <div class="text"><a href="team.html">Shubhnashu Srivastava</a>
                     <div style="margin-top: 8px; border-top: 2px solid #f39c12; padding-top: 8px;"><p style="font-size: 12px; font-weight: 600; color: #333; margin: 0 0 4px 0;">Founder & Director</p><p style="font-size: 11px; color: #888; margin: 0; font-weight: 500;">Talowiz Inc</p></div>
                     <ul>
@@ -881,7 +1187,7 @@
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                   </div>
-                  <div class="logo"><img src="assets/img/icons/google1.svg" alt=""></div>
+                  <div class="logo"><img class="testimonialimg" src="assets/img/elements/brand-img5.png" alt="Talowiz Inc"></div>
                 </div>
               </div>
               <div class="testimonial-boxarea"><img src="assets/img/icons/quito5.svg" alt="" class="quito">
@@ -889,7 +1195,7 @@
                   demonstrated excellent understanding of our operational needs and delivered a system that enhanced
                   efficiency across all departments."</p>
                 <div class="space48"></div>
-                <div class="auhtor-logo">
+                <div class="auhtor-logo homepage-auhtor-logo">
                   <div class="text"><a href="team.html">Govind Jalra</a>
                     <div style="margin-top: 8px; border-top: 2px solid #f39c12; padding-top: 8px;"><p style="font-size: 12px; font-weight: 600; color: #333; margin: 0 0 4px 0;">State Nodal Office</p><p style="font-size: 11px; color: #888; margin: 0; font-weight: 500;">Vidur Prerna Samiti, UPSRlM UP</p></div>
                     <ul>
@@ -900,7 +1206,7 @@
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                   </div>
-                  <div class="logo"><img src="assets/img/icons/google1.svg" alt=""></div>
+                  <div class="logo"><img class="testimonialimg" src="assets/img/elements/brand-img7.png" alt="Vidur Prerna Samiti"></div>
                 </div>
               </div>
               <div class="testimonial-boxarea"><img src="assets/img/icons/quito5.svg" alt="" class="quito">
@@ -908,7 +1214,7 @@
                   to quality, attention to detail, and ability to deliver on schedule have made them an invaluable
                   partner for Luma Group."</p>
                 <div class="space48"></div>
-                <div class="auhtor-logo">
+                <div class="auhtor-logo homepage-auhtor-logo">
                   <div class="text"><a href="team.html">Bill Ryan</a>
                     <div style="margin-top: 8px; border-top: 2px solid #f39c12; padding-top: 8px;"><p style="font-size: 12px; font-weight: 600; color: #333; margin: 0 0 4px 0;">Chief Financial Officer</p><p style="font-size: 11px; color: #888; margin: 0; font-weight: 500;">Luma Group, USA</p></div>
                     <ul>
@@ -919,7 +1225,7 @@
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                   </div>
-                  <div class="logo"><img src="assets/img/icons/google1.svg" alt=""></div>
+                  <div class="logo"><img class="testimonialimg" src="assets/img/elements/brand-img2.png" alt="Luma Group"></div>
                 </div>
               </div>
               <div class="testimonial-boxarea"><img src="assets/img/icons/quito5.svg" alt="" class="quito">
@@ -927,7 +1233,7 @@
                   delivering robust solutions. Their contributions have been instrumental in advancing SAIL's digital
                   transformation initiatives."</p>
                 <div class="space48"></div>
-                <div class="auhtor-logo">
+                <div class="auhtor-logo homepage-auhtor-logo">
                   <div class="text"><a href="team.html">Sanjay Kumar Singh</a>
                     <div style="margin-top: 8px; border-top: 2px solid #f39c12; padding-top: 8px;"><p style="font-size: 12px; font-weight: 600; color: #333; margin: 0 0 4px 0;">Deputy General Manager</p><p style="font-size: 11px; color: #888; margin: 0; font-weight: 500;">SAIL India</p></div>
                     <ul>
@@ -938,7 +1244,7 @@
                       <li><i class="fa-solid fa-star"></i></li>
                     </ul>
                   </div>
-                  <div class="logo"><img src="assets/img/icons/google1.svg" alt=""></div>
+                  <div class="logo"><img class="testimonialimg" src="assets/img/elements/brand-img11.svg" alt="SAIL India"></div>
                 </div>
               </div>
             </div>
@@ -959,8 +1265,8 @@
               <img src="assets/img/elements/star2.png" alt="" class="star2 keyframe5">
               <img src="assets/img/elements/star2.png" alt="" class="star3 keyframe5">
               <h2 class="text-anime-style-3">Get In Touch With Us Today</h2>
-              <p>We're here to help! If you have any questions or would like to discuss <br class="d-md-block d-none">
-                how our SEO and digital marketing services can benefit your business,</p>
+              <p>We are here to empower your business with Magath consultants expertise.
+Whether you need guidance on technology roadmaps, </br> enterprise architecture, digital transformation, or custom software solutions, our consultants are ready to help you achieve sustainable growth.</p>
             </div>
           </div>
         </div>
@@ -968,17 +1274,26 @@
           <div class="col-lg-5" data-aos="zoom-out" data-aos-duration="1000">
             <div class="contact-info-area">
               <h3>Contact Info</h3>
-              <p>We're here to help! If you have any questions or would like to discuss how our SEO and digital
-                marketing services can benefit your business,</p>
+              <p>Reach out today to discover how Magath Consultants can streamline your operations, optimize workflows, and drive innovation across your organization.</p>
               <div class="space32"></div>
               <div class="contact-auhtor-box">
                 <div class="icons">
                   <img src="assets/img/icons/location2.svg" alt="">
                 </div>
                 <div class="content">
-                  <h4>Our Location</h4>
-                  <a href="#">Ground Floor C 25, C Block Sector 58, <br class="d-lg-block d-none"> Noida 201301,
-                    India</a>
+                  <h4>Noida Location</h4>
+                  <a href="#">Ground Floor C 25, C Block Sector <br class="d-lg-block d-none">  58, Noida 201301, India</a>
+                </div>
+              </div>
+              <div class="space40"></div>
+              <div class="space32"></div>
+              <div class="contact-auhtor-box">
+                <div class="icons">
+                  <img src="assets/img/icons/location2.svg" alt="">
+                </div>
+                <div class="content">
+                  <h4>Delhi Location</h4>
+                  <a href="#">E-5 lane no.1, Westend Marg <br class="d-lg-block d-none">  New Delhi, 110030, India</a>
                 </div>
               </div>
               <div class="space40"></div>
@@ -1006,51 +1321,51 @@
           <div class="col-lg-7" data-aos="zoom-out" data-aos-duration="1200">
             <div class="contact-boxarea">
               <h3>Get In Touch</h3>
-              <p>We're here to help! If you have any questions or would like to discuss <br class="d-lg-block d-none">
-                how our SEO and digital marketing services can benefit your business,</p>
-              <form action="https://api.web3forms.com/submit" method="POST">
+              <p>We're here to help! If you have any questions or would like to discuss</p>
+              <div id="form-status-message"></div>
+              <form id="contact-form" action="send-contact.php" method="POST">
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="input-area">
-                      <input type="text" placeholder="First Name" required>
+                      <input type="text" name="first_name" placeholder="First Name" required>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="input-area">
-                      <input type="text" placeholder="Last Name" required>
+                      <input type="text" name="last_name" placeholder="Last Name" required>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="input-area">
-                      <input type="email" placeholder="Email Address" required>
+                      <input type="email" name="email" placeholder="Email Address" required>
                     </div>
                   </div>
 
                   <div class="col-lg-6">
                     <div class="input-area">
-                      <input type="number" placeholder="Phone Number" required>
+                      <input type="tel" name="phone" placeholder="Phone Number" required>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="input-area">
-                      <select name="country" id="country" class="country-area nice-select6">
-                        <option value="1" data-display="Service Type">Service Type</option>
-                        <option value="">Belgium</option>
-                        <option value="">Brezil</option>
-                        <option value="">Argentina</option>
-                        <option value="">Bangladesh</option>
-                        <option value="">Germany</option>
-                      </select>
+                      <select name="service_type" id="service_type" class="country-area nice-select6" required>
+                      <option value="" data-display="Service Type">Service Type</option>
+                      <option value="IT Consulting">IT Consulting</option>
+                      <option value="AI and ML Solutions">AI and ML Solutions</option>
+                      <option value="Software Development">Software Development</option>
+                      <option value="Cloud and DevOps">Cloud and DevOps</option>
+                      <option value="Digital Marketing">Digital Marketing</option>
+                    </select>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="input-area">
-                      <textarea placeholder="Your Message" required></textarea>
+                      <textarea name="message" placeholder="Your Message" required></textarea>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="input-area">
-                      <button class="header-btn1">Free Consultation <span><i
+                      <button type="submit" class="header-btn1">Free Consultation <span><i
                             class="fa-solid fa-arrow-right"></i></span></button>
                     </div>
                   </div>
@@ -1070,16 +1385,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 m-auto">
-            <div class="cta-header-area text-center sp4 heading2">
-              <h2 class="text-anime-style-3">Ready To Take Your SEO To <br class="d-md-block d-none"> The Next Level
-              </h2>
-              <p data-aos="fade-up" data-aos-duration="1000">Effective SEO strategies not only elevate a website's
-                visibility but also drive <br class="d-md-block d-none"> targeted traffic, enhance user experience,</p>
-              <div class="btn-area text-center" data-aos="fade-up" data-aos-duration="1200">
-                <a href="contact.html" class="header-btn1">Free Consultation <span><i
-                      class="fa-solid fa-arrow-right"></i></span></a>
-              </div>
+           <div class="cta-header-area text-center sp4 heading2">
+            <h2 class="text-anime-style-3">Your trusted IT partner for secure, reliable,<br class="d-md-block d-none">  and innovative growth.
+            </h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Delivering proactive support, robust cybersecurity, and scalable cloud solutions tailored to your unique business goals. </p>
+            <div class="btn-area text-center" data-aos="fade-up" data-aos-duration="1200">
+              <a href="contact.html" class="header-btn1">Free Consultation <span><i
+                    class="fa-solid fa-arrow-right"></i></span></a>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -1089,31 +1403,27 @@
     <!--===== FOOTER AREA STARTS =======-->
     <div class="footer1-section-area">
       <div class="container">
-        <div class="row">
+        <div class="row p-lg-2">
           <div class="col-lg-3 col-md-6">
             <div class="footer-logo-area">
-              <img src="assets/img/logo/logo1.png" alt="">
-              <p>By optimizing content, leveraging relevant keywords, and adhering to best practices, businesses can
-                secure prominent position (SEO)</p>
-              <ul>
-                <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/img/icons/youtube.svg" alt=""></a></li>
-              </ul>
+              <img style="width: 55%;" src="assets/img/logo/logo.webp" alt="">
+              <p style="font-size: 15px;color: #000;"><strong>GeM Empanelled</strong></p>
+            <img style="width: 50%;" src="assets/img/elements/GeM-logo.svg.png" alt="" />
+            <p style="font-size: 15px; color: #000;"><strong>MSME Registered</strong></p>
+            <img style="width: 50%;" src="assets/img/elements/msme_logo.png" alt="" />
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6">
             <div class="footer-logo-area1">
-              <h3>About Link</h3>
+              <h3>Quick Link</h3>
               <ul>
-                <li><a href="blog.html">Our Blog</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="service1.html">Services</a></li>
-                <li><a href="case.html">Marketing</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
+                 <li><a href="case.html">Case Study</a></li>
+                 <li><a href="career.html">Career</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
@@ -1125,7 +1435,8 @@
                 <li><a href="mailto:info@magathconsultants.com"><img src="assets/img/icons/email.svg"
                       alt=""><span>info@magathconsultants.com</span></a></li>
                 <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>Ground Floor C 25, C Block Sector
-                      58, <br class="d-lg-block d-none"> Noida 201301, India</span></a></li>
+                      58, Noida 201301, India</span></a></li>
+                <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>E-5 lane no.1, Westend Marg,New Delhi, Delhi 110030, India</span></a></li>
                 <li><a href="tel:+919716634044"><img src="assets/img/icons/phone.svg" alt=""><span>+91
                       9716634044</span></a></li>
               </ul>
@@ -1139,20 +1450,24 @@
                 <button class="header-btn1"> Subscribe <span><i class="fa-solid fa-arrow-right"></i></span></button>
               </form>
             </div>
+            <div class="footer-logo-area">
+              <ul>
+                <li><a href="https://www.facebook.com/share/18BqGeXXPq/" target="_blank" rel="noopener noreferrer"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/company/magathconsultants/" target="_blank" rel="noopener noreferrer"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
+                <li><a href="https://x.com/Magath_India" target="_blank" rel="noopener noreferrer"><img src="assets/img/icons/twitter1.svg" alt=""></a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="space80 d-lg-block d-none"></div>
         <div class="space40 d-lg-none d-block"></div>
         <div class="row">
           <div class="col-lg-12">
             <div class="copyright-area">
               <div class="pera">
-                <p>ⓒCopyright 2026 Magath Consultants . All rights reserved</p>
+                <p class="text-center d-lg-none" style="line-height: 25px;">Copyright 2026 Magath Consultants. <br/> All rights reserved</p>
+                <p class="d-lg-block d-none d-sm-none text-center" style="line-height: 25px;">Copyright 2026 Magath Consultants. All rights reserved</p>
               </div>
-              <ul>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#" class="m-0"> Privacy Policy </a></li>
-              </ul>
+              
             </div>
           </div>
         </div>
@@ -1178,10 +1493,72 @@
   <script src="assets/js/plugins/waypoints.js"></script>
   <script src="assets/js/plugins/slick-slider.js"></script>
   <script src="assets/js/plugins/circle-progress.js"></script>
+  <script>
+    (function () {
+      var modal = document.getElementById('productImageModal');
+      var modalImg = document.getElementById('productImageModalImg');
+      var modalTitle = document.getElementById('productImageModalTitle');
+      var modalDescription = document.getElementById('productImageModalDescription');
+      var modalClose = document.getElementById('productImageModalClose');
+      var triggers = document.querySelectorAll('.product-image-trigger');
+
+      if (!modal || !modalImg || !modalTitle || !modalDescription || !modalClose || !triggers.length) {
+        return;
+      }
+
+      function closeModal() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+      }
+
+      triggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function (event) {
+          event.preventDefault();
+          modalImg.src = trigger.getAttribute('data-image') || '';
+          modalTitle.textContent = trigger.getAttribute('data-title') || 'Product Details';
+          modalDescription.textContent = trigger.getAttribute('data-description') || '';
+          modal.classList.add('is-open');
+          modal.setAttribute('aria-hidden', 'false');
+        });
+      });
+
+      modalClose.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+  <script src="assets/js/contact-form.js"></script>
+    <script src="assets/js/erp-nav.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

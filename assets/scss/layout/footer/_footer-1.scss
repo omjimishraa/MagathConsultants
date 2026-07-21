@@ -154,7 +154,9 @@
                     }
                     span {
                         transition: all .4s;
-
+                    font-size: var(--ztc-font-size-font-s14);
+                    line-height: var(--ztc-font-size-font-s18);
+                    font-weight: var(--ztc-weight-medium);
                     }
                 }
             }
@@ -222,10 +224,10 @@
         }
     }
     .copyright-area {
-        display: flex;
+        // display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 30px 0 24px 0;
+        padding: 16px 0 16px 0;
         border-top: 1px solid #E5E7EB;
         @media #{$xs} {
             display: inline-block;
