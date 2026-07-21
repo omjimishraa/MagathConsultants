@@ -23,6 +23,7 @@
     "flutter-apps": { icon: "fa-solid fa-mobile", desc: "Cross-platform Flutter apps with native-grade UX" },
     "react-native-apps": { icon: "fa-brands fa-react", desc: "React Native delivery for rapid market launches" },
     "saas-platforms": { icon: "fa-solid fa-cloud", desc: "SaaS architecture, onboarding, and subscription growth" },
+    "web-development": { icon: "fa-solid fa-code", desc: "Modern web engineering across frontend, backend, and cloud" },
     "crm-systems": { icon: "fa-solid fa-address-book", desc: "Customer lifecycle systems optimized for growth teams" },
     "salesforce": { icon: "fa-solid fa-cloud-bolt", desc: "Agentforce and CRM transformation for enterprise teams" },
     "shopify": { icon: "fa-solid fa-cart-shopping", desc: "Scalable commerce systems for B2C and B2B" },

@@ -3,7 +3,7 @@ $colors: (
         'text-1': #fff,
         'text-2': #090B0E,
         'text-3': #3D4C5E,
-        'text-4': #4E2FDA,
+        'text-4': #bf7810, // Golden New
         'text-5': #FB3189,
         'text-6': #FF0A54,
         'text-7': #FFE7EE,
@@ -12,7 +12,7 @@ $colors: (
         'text-10': #F6F8F9,
         'text-11': #ADFF1C,
         'text-12': #0A2828,
-        'text-13': #2E00FF,
+        'text-13': #003674, // Blue new
         'text-14': #FF6610,
         'text-15': #0D47A1,
         'text-16': #1B6CFC,
@@ -20,7 +20,8 @@ $colors: (
         'text-18': #081120,
     ),
     'bg': (
-        'bg-1':#4E2FDA,
+        'bg-1':#bf7810,
+        // 'bg-1':#4E2FDA,
         'bg-2':#EDE9F8,
         'bg-3':#C8BFF4,
         'bg-4':#EDEAFB,
@@ -45,8 +46,8 @@ $colors: (
         'bg-23':#D4FFD6,
         'bg-24':#0D47A1,
         'bg-25':#FF6610,
-        'bg-26': #1B6CFC,
-        'bg-27': #FCCC8A,
+        'bg-26': #003674, // Blue new
+        'bg-27': #bf7810, // Golden New
         'bg-28': #6455E1,
     ),
     'border': (

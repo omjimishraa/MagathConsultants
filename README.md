@@ -1,4 +1,4 @@
-# ERP Development Subpages Integration
+# CRM & ERP Solutions Subpages Integration
 
 ## New Pages
 - service/salesforce.html
@@ -39,7 +39,7 @@ Included formats and sizes:
 - assets/js/erp-nav.js now enhances ERP menu entries with icon + one-line description.
 - Active state is applied for:
   - Current page link (aria-current="page")
-  - ERP Development parent item
+  - CRM & ERP Solutions parent item
   - Services parent item
 - Mobile submenu auto-expands to show active ERP page.
 
@@ -88,7 +88,7 @@ Each page includes:
 - JSON-LD for Organization + Service
 
 ## Test Checklist
-- [ ] Breadcrumb path is exactly Home > Services > ERP Development > Current Page
+- [ ] Breadcrumb path is exactly Home > Services > CRM & ERP Solutions > Current Page
 - [ ] Desktop mega menu shows ERP entries with icon + short description
 - [ ] Mobile menu ERP submenu expands and each item is tappable
 - [ ] Active menu highlighting works for ERP child + ERP parent + Services parent

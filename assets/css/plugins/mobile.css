@@ -50,7 +50,7 @@ ul, li{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 17px 0;
+    /* padding: 17px 0; */
     z-index: 9;
     
 }
@@ -101,7 +101,7 @@ ul, li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:20px 25px;
+    padding:0px 25px;
     background-color: #FEEAC9;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
